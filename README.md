@@ -106,6 +106,15 @@ end
 
 # Vibrational Frequencies
 
+```
+!wB97X-D3 RIJCOSX def2-TZVP def2/J TightSCF TightOpt Freq
+```
+
+## Numerical Gradient and Hessian
+```
+!DLPNO-CCSD(T) cc-pVTZ cc-pVTZ/C OPT NUMGRAD NUMHESS
+```
+
 # Special cases
 ## UHF
 ```
@@ -149,6 +158,10 @@ T1 diagnostic                              ...      0.006593126
 !HF DEF2-SVP AUTOAUX RIJCOSX
 ```
 - RI with `RIJCOSX` with `AUTOAUX`
+
+## Dispersion corrections
+-DFT is known to perform poorly with intermolecular or weak interactions. In general it is advisable to use the D3 [Goerigk2011] or the charge-dependent D4 [Grimme2017] corrections using `!B3LYP DEF2-SVP OPT D3` or `!B3LYP DEF2-SVP OPT D4`.
+
 
 # Check Convergence
 ## Energy
