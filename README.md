@@ -1,5 +1,4 @@
 # Orca usage notes
-
 # Basis Input
 
 ```
@@ -28,9 +27,67 @@ H         -3.88959        1.36040       -0.81444
 *
 ```
 
+# Methods
+```
+!HF DEF2-SVP
+```
+- HF
+```
+!RI-MP2 cc-pVTZ cc-pVTZ/C
+```
+- RI-MP2
+```
+!DLPNO-MP2 cc-pVTZ cc-pVTZ/C
+```
+- DLPNO-MP2
+  
 
 # Single Point Energy
 
 # Geometry Optimization
 
 # Vibrational Frequencies
+
+# Special cases
+## UHF
+```
+----------------------
+UHF SPIN CONTAMINATION
+----------------------
+
+Expectation value of <S**2>     :     2.005700
+Ideal value S*(S+1) for S=1.0   :     2.000000
+Deviation                       :     0.005700
+```
+- If the expectation value of the (written as <S**2>) operator differs significantly from the ideal value, it might be that your system could only be treated with a multi-reference calculation such as CASSCF.
+
+# Techniques
+
+## Resolution of identity
+```
+!HF DEF2-SVP DEF2/J RIJDX
+```
+- RI with `RIJDX`
+```
+!HF DEF2-SVP DEF2/J RIJCOSX
+```
+- RI with `RIJCOSX`
+```
+!HF DEF2-SVP AUTOAUX RIJCOSX
+```
+- RI with `RIJCOSX` with `AUTOAUX`
+
+# Check Convergence
+## Energy
+```
+-------------------------   --------------------
+FINAL SINGLE POINT ENERGY       -76.320253607017
+-------------------------   --------------------
+```
+- HF or DF
+```
+------------------------------------------------------
+ DLPNO-MP2 CORRELATION ENERGY:      -0.240752652556 Eh
+------------------------------------------------------
+```
+- DLPNO-MP2
