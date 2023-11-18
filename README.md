@@ -163,6 +163,8 @@ FINAL SINGLE POINT ENERGY       -76.320253607017
  DLPNO-MP2 CORRELATION ENERGY:      -0.240752652556 Eh
 ------------------------------------------------------
 ```
+- DLPNO-MP2
+
 
 ## Geometry
 ```
@@ -203,4 +205,3 @@ Max(Dihed)        0.10      Max(Improp)    0.00
           ***        THE OPTIMIZATION HAS CONVERGED     ***
           *************************************************
 ```
-- DLPNO-MP2
