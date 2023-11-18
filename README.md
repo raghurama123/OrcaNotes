@@ -1,7 +1,7 @@
 # Orca usage notes
 
-# Input control
-## Basis Input
+# 1. Input control
+## 1.1 Basis Input
 
 ```
 !HF DEF2-SVP
@@ -11,7 +11,7 @@ H         -2.59626        1.77639        0.00000
 H         -3.88959        1.36040       -0.81444
 *
 ```
-## Read geometry from a file
+## 1.2 Read geometry from a file
 
 * To load the geometry from a file, try
 ```
@@ -28,7 +28,7 @@ H         -2.59626        1.77639        0.00000
 H         -3.88959        1.36040       -0.81444
 *
 ```
-## Store final geometry in a file
+## 1.3 Store final geometry in a file
 
 ```
 !HF DEF2-SVP XYZFILE Opt
@@ -37,7 +37,7 @@ H         -3.88959        1.36040       -0.81444
 ```
 - The final geometry will be stored in the file `geom_final.xyz`
 
-# Memory and cores
+# 2. Memory and cores
 ```
 %MaxCore 4000
 
@@ -46,7 +46,7 @@ end
 ```
 - 4GB per core and 8 cores for this calculation.
 
-## Optimal memory for helios
+## 2.1 Optimal memory for helios
 
 - `%MaxCore 4000` qa, qb
 - `%MaxCore 5000` qd
@@ -54,7 +54,7 @@ end
 - `%MaxCore 16000` qc
 
 
-# Methods
+# 3. Methods
 ```
 !HF DEF2-SVP
 ```
@@ -68,9 +68,9 @@ end
 ```
 - DLPNO-MP2
   
-# Single Point Energy
+# 4. Single Point Energy
 
-## SCF Convergence
+## 4.1 SCF Convergence
 
 ```
 !wB97X-D3 RIJCOSX def2-TZVP def2/J TightSCF  
@@ -84,13 +84,13 @@ end
 ```
 - Maximum number of SCF cycles
 
-# Geometry Optimization
+# 5. Geometry Optimization
 ```
 !wB97X-D3 RIJCOSX def2-TZVP def2/J TightSCF TightOpt 
 ```
 - `TightSCF` and `TightOpt` for tight convergence criteria for SCF convergence and geometry convergence
 
-## Calculate Hessian
+## 5.1 Calculate Hessian
 ```
 %geom
   Calc_Hess true
@@ -99,24 +99,24 @@ end
 end
 ```
 
-## Numerical Gradient
+## 5.2 Numerical Gradient
 ```
 !DLPNO-CCSD(T) cc-pVTZ cc-pVTZ/C OPT NUMGRAD
 ```
 
-# Vibrational Frequencies
+# 6. Vibrational Frequencies
 
 ```
 !wB97X-D3 RIJCOSX def2-TZVP def2/J TightSCF TightOpt Freq
 ```
 
-## Numerical Gradient and Hessian
+## 6.1 Numerical Gradient and Hessian
 ```
 !DLPNO-CCSD(T) cc-pVTZ cc-pVTZ/C OPT NUMGRAD NUMHESS
 ```
 
-# Special cases
-## UHF
+# 7. Special cases
+## 7.1 UHF
 ```
 ----------------------
 UHF SPIN CONTAMINATION
@@ -127,7 +127,7 @@ Ideal value S*(S+1) for S=1.0   :     2.000000
 Deviation                       :     0.005700
 ```
 - If the expectation value of the (written as <S**2>) operator differs significantly from the ideal value, it might be that your system could only be treated with a multi-reference calculation such as CASSCF.
-## T1 diagnostic
+## 7.2 T1 diagnostic
 ```
 ----------------------
 COUPLED CLUSTER ENERGY
@@ -143,9 +143,9 @@ T1 diagnostic                              ...      0.006593126
 ```
 - Please always check the T1 diagnostic value printed. A rule of thumb says, that for a value of the diagnostic of larger than 0.02 the results are not to be trusted and the HF reference might be poor.
 
-# Techniques
+# 8. Techniques
 
-## Resolution of identity
+## 8.1 Resolution of identity
 ```
 !HF DEF2-SVP DEF2/J RIJDX
 ```
@@ -159,12 +159,12 @@ T1 diagnostic                              ...      0.006593126
 ```
 - RI with `RIJCOSX` with `AUTOAUX`
 
-## Dispersion corrections
+## 8.2 Dispersion corrections
 -DFT is known to perform poorly with intermolecular or weak interactions. In general it is advisable to use the D3 [Goerigk2011] or the charge-dependent D4 [Grimme2017] corrections using `!B3LYP DEF2-SVP OPT D3` or `!B3LYP DEF2-SVP OPT D4`.
 
 
-# Check Convergence
-## Energy
+# 9. Check Convergence
+## 9.1 Energy
 ```
 -------------------------   --------------------
 FINAL SINGLE POINT ENERGY       -76.320253607017
@@ -179,7 +179,7 @@ FINAL SINGLE POINT ENERGY       -76.320253607017
 - DLPNO-MP2
 
 
-## Geometry
+## 9.2 Geometry
 ```
                     *****************************
                     * Geometry Optimization Run *
