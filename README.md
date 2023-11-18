@@ -59,8 +59,21 @@ end
 ```
 - DLPNO-MP2
   
-
 # Single Point Energy
+
+## SCF Convergence
+
+```
+!wB97X-D3 RIJCOSX def2-TZVP def2/J TightSCF TightOpt xyzfile Freq
+```
+- `TightSCF` for tight convergence
+
+```
+%scf
+  MaxIter 150
+end
+```
+- Maximum number of SCF cycles
 
 # Geometry Optimization
 
