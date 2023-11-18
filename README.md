@@ -1,6 +1,6 @@
 # Orca usage notes
 
-# Input
+# Input control
 ## Basis Input
 
 ```
@@ -28,7 +28,16 @@ H         -2.59626        1.77639        0.00000
 H         -3.88959        1.36040       -0.81444
 *
 ```
-## Memory and cores
+## Store final geometry in a file
+
+```
+!HF DEF2-SVP XYZFILE Opt
+%base "geom_final"
+* xyz 0 1 geom_init.xyz
+```
+- The final geometry will be stored in the file `geom_final.xyz`
+
+# Memory and cores
 ```
 %MaxCore 4000
 
@@ -76,6 +85,15 @@ end
 - Maximum number of SCF cycles
 
 # Geometry Optimization
+
+## Calculate Hessian
+```
+%geom
+  Calc_Hess true
+  Recalc_Hess 5
+  MaxIter 50
+end
+```
 
 # Vibrational Frequencies
 
