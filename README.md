@@ -16,7 +16,7 @@ H         -3.88959        1.36040       -0.81444
 
 ```
 !HF DEF2-SVP 
-* xyz 0 1 geom_init.xyz
+* XYZFILE 0 1 geom_init.xyz
 ```
 where `geom_init.xyz` contains
 
@@ -32,7 +32,7 @@ H         -3.88959        1.36040       -0.81444
 
 ```
 !HF DEF2-SVP Opt XYZFILE
-* xyz 0 1 geom_init.xyz
+* XYZFILE 0 1 geom_init.xyz
 ```
 - If the input file is test.com, the final geometry will be stored in the file `test.xyz`
 
@@ -40,7 +40,7 @@ H         -3.88959        1.36040       -0.81444
 ```
 !HF DEF2-SVP Opt XYZFILE
 %base "HF_SVP"
-* xyz 0 1 geom_init.xyz
+* XYZFILE 0 1 geom_init.xyz
 ```
 - If the input file is test.com, the final geometry will be stored in the file `HF_SVP.xyz`. All the files, expect the output file will have the basename "HF_SVP"
 
