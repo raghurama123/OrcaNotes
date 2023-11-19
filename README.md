@@ -176,6 +176,17 @@ T1 diagnostic                              ...      0.006593126
 ## 8.2 Dispersion corrections
 -DFT is known to perform poorly with intermolecular or weak interactions. In general it is advisable to use the D3 [Goerigk2011] or the charge-dependent D4 [Grimme2017] corrections using `!B3LYP DEF2-SVP OPT D3` or `!B3LYP DEF2-SVP OPT D4`.
 
+## 8.3 CBS Extrapolation
+- The `EXTRAPOLATE(3)` keyword here means that three calculations using the basis set from the family cc-pVxZ (where x is D, T and then Q) will be done and the CBS results will be extrapolated from that.
+```
+!DLPNO-CCSD(T) EXTRAPOLATE(3) cc-pVQZ/C
+```
+- The /C basis is not automatically chosen, so it is best to use the one corresponding to the largest basis.
+```
+!DLPNO-CCSD(T) EXTRAPOLATE(3) AUTOAUX
+```
+- AUTOAUX for /C basis
+
 
 # 9. Check Convergence
 ## 9.1 Energy
