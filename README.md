@@ -187,6 +187,20 @@ T1 diagnostic                              ...      0.006593126
 ```
 - AUTOAUX for /C basis
 
+### 8.3.1 2-point extrapolation
+```
+Extrapolate(X/Y,basis)
+```
+- `X/Y` are successive cardinal numbers and `basis = cc, aug-cc, cc-core, ano, saug-ano, aug-ano, def2`
+- `Extrapolate(2/3,cc)` or `Extrapolate(3/4,cc)`
+
+
+### 8.3.2 n-point extrapolation
+```
+Extrapolate(n,basis)
+```
+- Calculate the first n-energies for members of the basis set family basis, e.g. Extrapolate(3,cc) is for 3-point extrapolation with cc-pVDZ, cc-pVTZ and cc-pVQZ.
+  
 
 # 9. Check Convergence
 ## 9.1 Energy
