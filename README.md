@@ -15,8 +15,8 @@ H         -3.88959        1.36040       -0.81444
 ## 1.2 Read geometry from a file
 
 ```
-!HF DEF2-SVP XYZFILE
-* xyz 0 1 
+!HF DEF2-SVP 
+* xyz 0 1 geom_init.xyz
 ```
 where `geom_init.xyz` contains
 
