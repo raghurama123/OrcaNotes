@@ -201,6 +201,44 @@ Extrapolate(n,basis)
 ```
 - Calculate the first n-energies for members of the basis set family basis, e.g. Extrapolate(3,cc) is for 3-point extrapolation with cc-pVDZ, cc-pVTZ and cc-pVQZ.
   
+### 8.3.3 ExtrapolateEP2 with MP2
+- For the ExtrapolateEP2, and ExtrapolateEP3 keywords the default cheap method is the DLPNO-CCSD(T) with the NormalPNO thresholds.
+```
+! ExtrapolateEP2(2/3,ANO,MP2) TightSCF Conv Bohrs
+```
+- Extrpolate MP2
+```
+Alpha     :  5.410 (SCF Extrapolation)
+Beta      :  2.430 (correlation extrapolation)
+SCF energy with basis ano-pVDZ:                   -76.059178452
+SCF energy with basis ano-pVTZ:                   -76.064774379
+Extrapolated CBS SCF energy :                     -76.065995735 (-0.001221356)
+MP2 energy with basis ano-pVDZ:                    -0.219202871
+MP2 energy with basis ano-pVTZ:                    -0.267058634
+Extrapolated CBS correlation energy :              -0.295568604 (-0.028509970)
+CCSD(T) correlation energy with basis ano-pVDZ:    -0.229478341
+CCSD(T) - MP2 energy with basis ano-pVDZ:          -0.010275470
+Estimated CBS total energy :                      -76.371839809
+```
+### 8.3.4 ExtrapolateEP2 with MDCI
+- For the ExtrapolateEP2, and ExtrapolateEP3 keywords the default cheap method is the DLPNO-CCSD(T) with the NormalPNO thresholds.
+```
+! ExtrapolateEP2(2/3,cc,DLPNO-CCSD(T)) TightSCF Conv Bohrs
+```
+- Extrapolate MDCI
+```
+Alpha     :  4.420 (SCF Extrapolation)
+Beta      :  2.460 (correlation extrapolation)
+SCF energy with basis cc-pVDZ:                      -76.026430944
+SCF energy with basis cc-pVTZ:                      -76.056728252
+Extrapolated CBS SCF energy :                       -76.066581429 (-0.009853177)
+MDCI energy with basis cc-pVDZ:                      -0.214429497
+MDCI energy with basis cc-pVTZ:                      -0.275299699
+Extrapolated CBS correlation energy :                -0.310868368 (-0.035568670)
+CCSD(T) correlation energy with basis cc-pVDZ:       -0.214548320
+CCSD(T) - MDCI energy with basis cc-pVDZ:            -0.000118824
+Estimated CBS total energy :                        -76.377568621
+```
 
 # 9. Check Convergence
 ## 9.1 Energy
