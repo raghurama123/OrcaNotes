@@ -1,6 +1,7 @@
 # Orca usage notes
 
-# 1. Input control
+# 1. Input/Output control
+
 ## 1.1 Basis Input
 
 ```
@@ -13,10 +14,9 @@ H         -3.88959        1.36040       -0.81444
 ```
 ## 1.2 Read geometry from a file
 
-* To load the geometry from a file, try
 ```
 !HF DEF2-SVP XYZFILE
-* xyz 0 1 geom_init.xyz
+* xyz 0 1 
 ```
 where `geom_init.xyz` contains
 
@@ -31,11 +31,18 @@ H         -3.88959        1.36040       -0.81444
 ## 1.3 Store final geometry in a file
 
 ```
-!HF DEF2-SVP XYZFILE Opt
-%base "geom_final"
+!HF DEF2-SVP Opt XYZFILE
 * xyz 0 1 geom_init.xyz
 ```
-- The final geometry will be stored in the file `geom_final.xyz`
+- If the input file is test.com, the final geometry will be stored in the file `test.xyz`
+
+## 1.4 Change basename
+```
+!HF DEF2-SVP Opt XYZFILE
+%base "HF_SVP"
+* xyz 0 1 geom_init.xyz
+```
+- If the input file is test.com, the final geometry will be stored in the file `HF_SVP.xyz`. All the files, expect the output file will have the basename "HF_SVP"
 
 # 2. Memory and cores
 ```
