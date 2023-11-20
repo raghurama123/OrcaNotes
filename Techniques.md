@@ -20,7 +20,7 @@
 ## 8.3 CBS Extrapolation
 - The `EXTRAPOLATE(3)` keyword here means that three calculations using the basis set from the family cc-pVxZ (where x is D, T and then Q) will be done and the CBS results will be extrapolated from that.
 ```
-!DLPNO-CCSD(T) EXTRAPOLATE(3) cc-pVQZ/C
+!DLPNO-CCSD(T) EXTRAPOLATE(3) CC-PVQZ/C
 ```
 - The /C basis is not automatically chosen, so it is best to use the one corresponding to the largest basis.
 ```
@@ -30,20 +30,20 @@
 
 ### 8.3.1 2-point extrapolation
 ```
-Extrapolate(X/Y,basis)
+EXTRAPOLATE(X/Y,basis)
 ```
-- `X/Y` are successive cardinal numbers and `basis = cc, aug-cc, cc-core, ano, saug-ano, aug-ano, def2`
-- `Extrapolate(2/3,cc)` or `Extrapolate(3/4,cc)`
+- `X/Y` are successive cardinal numbers and `basis = CC, AUG-CC, CC-CORE, ANO, SAUG-ANO, AUG-ANO, DEF2`
+- `EXTRAPOLATE(2/3,CC)` or `EXTRAPOLATE(3/4,CC)`
 
 
 ### 8.3.2 n-point extrapolation
 ```
-Extrapolate(n,basis)
+EXTRAPOLATE(n,basis)
 ```
-- Calculate the first n-energies for members of the basis set family basis, e.g. Extrapolate(3,cc) is for 3-point extrapolation with cc-pVDZ, cc-pVTZ and cc-pVQZ.
+- Calculate the first n-energies for members of the basis set family basis, e.g. EXTRAPOLATE(3,CC) is for 3-point extrapolation with cc-pVDZ, cc-pVTZ and cc-pVQZ.
   
 ### 8.3.3 ExtrapolateEP2 with MP2
-- For the ExtrapolateEP2, and ExtrapolateEP3 keywords the default cheap method is the DLPNO-CCSD(T) with the NormalPNO thresholds.
+- For the EXTRAPOLATEEP2, and EXTRAPOLATEEP3 keywords the default cheap method is the DLPNO-CCSD(T) with the `NORMALPNO` thresholds.
 ```
 ! ExtrapolateEP2(2/3,ANO,MP2) TightSCF Conv Bohrs
 ```
@@ -64,7 +64,7 @@ Estimated CBS total energy :                      -76.371839809
 ### 8.3.4 ExtrapolateEP2 with MDCI
 - For the ExtrapolateEP2, and ExtrapolateEP3 keywords the default cheap method is the DLPNO-CCSD(T) with the NormalPNO thresholds.
 ```
-! ExtrapolateEP2(2/3,cc,DLPNO-CCSD(T)) TightSCF Conv Bohrs
+! EXTRAPOLATEEP2(2/3,CC,DLPNO-CCSD(T)) TIGHTSCF CONV BOHRS
 ```
 - Extrapolate MDCI
 ```
