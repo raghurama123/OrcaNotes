@@ -2,7 +2,8 @@
 ```
 %MaxCore 4000
 
-%pal nprocs 8
+%pal
+  nprocs 8
 end
 ```
 - 4GB per core and 8 cores for this calculation.
