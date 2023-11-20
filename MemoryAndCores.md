@@ -1,18 +1,18 @@
 # 2. Memory and cores
 ```
-%MaxCore 4000
+%MAXCORE 4000
 
-%pal
-  nprocs 8
-end
+%PAL
+  NPROCS 8
+END
 ```
 - 4GB per core and 8 cores for this calculation.
 
 ## 2.1 Optimal memory for helios
 
-- `%MaxCore 4000` for workqa, workqb
-- `%MaxCore 5000` for workqd
-- `%MaxCore 14000` for workq
-- `%MaxCore 16000` for workqc
+- `%MAXCORE 4000` for workqa, workqb
+- `%MAXCORE 5000` for workqd
+- `%MAXCORE 14000` for workq
+- `%MAXCORE 16000` for workqc
 
 
