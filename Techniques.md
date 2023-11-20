@@ -45,7 +45,7 @@ EXTRAPOLATE(n,basis)
 ### 8.3.3 ExtrapolateEP2 with MP2
 - For the EXTRAPOLATEEP2, and EXTRAPOLATEEP3 keywords the default cheap method is the DLPNO-CCSD(T) with the `NORMALPNO` thresholds.
 ```
-! ExtrapolateEP2(2/3,ANO,MP2) TightSCF Conv Bohrs
+! EXTRAPOLATEEP2(2/3,ANO,MP2) TightSCF Conv Bohrs
 ```
 - Extrpolate MP2
 ```
@@ -61,8 +61,8 @@ CCSD(T) correlation energy with basis ano-pVDZ:    -0.229478341
 CCSD(T) - MP2 energy with basis ano-pVDZ:          -0.010275470
 Estimated CBS total energy :                      -76.371839809
 ```
-### 8.3.4 ExtrapolateEP2 with MDCI
-- For the ExtrapolateEP2, and ExtrapolateEP3 keywords the default cheap method is the DLPNO-CCSD(T) with the NormalPNO thresholds.
+### 8.3.4 EXTRAPOLATEEP2 with MDCI
+- For the EXTRAPOLATEEP2, and EXTRAPOLATEEP3 keywords the default cheap method is the DLPNO-CCSD(T) with the NormalPNO thresholds.
 ```
 ! EXTRAPOLATEEP2(2/3,CC,DLPNO-CCSD(T)) TIGHTSCF CONV BOHRS
 ```
