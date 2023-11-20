@@ -3,22 +3,22 @@
 ## 4.1 SCF convergence
 
 ```
-!wB97X-D3 RIJCOSX def2-TZVP def2/J TightSCF
+!WB97X-D3 RIJCOSX DEF2-TZVP DEF2/J TIGHTSCF
 ```
-- `TightSCF` for tight convergence
+- `TIGHTSCF` for tight convergence
 
 ```
-%scf
-  MaxIter 150
-end
+%SCF
+  MAXITER 150
+END
 ```
 - Maximum number of SCF cycles
-- Alternatively, remove `TightSCF` from the title line and use
+- Alternatively, remove `TIGHTSCF` from the title line and use
 ```
-%scf
-  MaxIter 150
-  Tight
-end
+%SCF
+  MAXITER 150
+  TIGHT
+END
 ```
 
 - It is probably best to define the SCF convergence option on the title line.
@@ -28,16 +28,16 @@ end
 ## 4.2 Convergence options
 - Here are the possible values and their definition
 ```
-%scf
-  Convergence # The default convergence is between medium and strong 
-  Sloppy      # very weak convergence 
-  Loose       # still weak convergence
-  Medium      # intermediate accuracy
-  Strong      # stronger 
-  Tight       # still stronger
-  VeryTight   # even stronger
-  Extreme     # close to the numerical zero of the computer in double-precision arithmetic
-end
+%SCF
+  CONVERGENCE # The default convergence is between medium and strong 
+  SLOPPY      # very weak convergence 
+  LOOSE       # still weak convergence
+  MEDIUM      # intermediate accuracy
+  STRONG      # stronger 
+  TIGHT       # still stronger
+  VERYTIGHT   # even stronger
+  EXTREME     # close to the numerical zero of the computer in double-precision arithmetic
+END
 ```
 - Here are all the options but we normally will not explicitly change these in the input file but will choose one of the options given above.
 
