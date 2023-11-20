@@ -37,14 +37,14 @@ end
 ```
 - Here are all the options but we normally will not explicitly change these in the input file but will choose one of the options given above.
 
-| Parameter | Sloppy | Loose | Medium | Strong | Tight | VeryTight | Extreme |
-|---|---|---|---|---|---|---|---|
-| TolE      | 3E-5   | 1E-5  | 1E-6   | 3E-7   | 1E-8  | 1E-9      | 1E-14   |
-| TolMaxP   | 1E-4   | 1E-3  | 1E-5   | 3E-6   | 1E-7  | 1E-8      | 1E-14   |
-| TolRMSP   | 1E-5   | 1E-4  | 1E-6   | 1E-7   | 5E-9  | 1E-9      | 1E-14   | 
-| TolErr    | 1E-4   | 5E-4  | 1E-5   | 3E-6   | 5E-7  | 1E-8      | 1E-14   |
-| TolG      | 3E-4   | 1E-4  | 5E-5   | 2E-5   | 1E-5  | 2E-6      | 1E-09   |
-| TolX      | 3E-4   | 1E-4  | 5E-5   | 2E-5   | 1E-5  | 2E-6      | 1E-09   |
+| Parameter | Sloppy | Loose | Medium | Normal | Strong | Tight | VeryTight | Extreme |
+|---|---|---|---|---|---|---|---|---|
+| TolE      | 3E-5   | 1E-5  | 1E-6   | 1E-6   | 3E-7   | 1E-8  | 1E-9      | 1E-14   |
+| TolMaxP   | 1E-4   | 1E-3  | 1E-5   | 1E-5   | 3E-6   | 1E-7  | 1E-8      | 1E-14   |
+| TolRMSP   | 1E-5   | 1E-4  | 1E-6   | 1E-6   | 1E-7   | 5E-9  | 1E-9      | 1E-14   | 
+| TolErr    | 1E-4   | 5E-4  | 1E-5   | 1E-6   | 3E-6   | 5E-7  | 1E-8      | 1E-14   |
+| TolG      | 3E-4   | 1E-4  | 5E-5   | 5E-5   | 2E-5   | 1E-5  | 2E-6      | 1E-09   |
+| TolX      | 3E-4   | 1E-4  | 5E-5   | 5E-5   | 2E-5   | 1E-5  | 2E-6      | 1E-09   |
 
 - `TolE` is energy change between two cycles, `Last Energy change`
 - `TolRMSP` is RMS density change, `Last MAX-Density change`
