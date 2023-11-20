@@ -4,7 +4,7 @@
 
 ```
 !HF DEF2-SVP
-* xyz 0 1
+* XYA 0 1
 O         -3.56626        1.77639        0.00000
 H         -2.59626        1.77639        0.00000
 H         -3.88959        1.36040       -0.81444
@@ -36,8 +36,8 @@ H         -3.88959        1.36040       -0.81444
 
 ## 1.4 Change basename
 ```
-!HF DEF2-SVP Opt XYZFILE
-%base "HF_SVP"
+!HF DEF2-SVP OPT XYZFILE
+%BASE "HF_SVP"
 * XYZFILE 0 1 geom_init.xyz
 ```
 - If the input file is test.com, the final geometry will be stored in the file `HF_SVP.xyz`. All the files, expect the output file will have the basename "HF_SVP"
