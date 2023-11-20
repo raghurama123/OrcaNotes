@@ -22,7 +22,7 @@ end
 ```
 
 - It is probably best to define the SCF convergence option on the title line.
-- Possible values are `LOOSESCF`, `SLOPPYSCF`, `NORMALSCF` (which is the default), `STRONGSCF`, `TIGHTSCF`, `VERYTIGHTSCF`, `EXTREMESCF`
+- Possible values are `LOOSESCF`, `SLOPPYSCF`, `NORMALSCF` (this is the default), `STRONGSCF`, `TIGHTSCF`, `VERYTIGHTSCF`, `EXTREMESCF`
 
 
 ## 4.2 Convergence options
