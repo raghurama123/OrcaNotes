@@ -4,7 +4,7 @@
 2. [Memory and Cores](MemoryAndCores)
 3. [Methods](Methods)
 4. [Single Point Energy](SinglePointEnergy)
-5. [Geometry Optimization](Geometry Optimization)
+5. [Geometry Optimization](GeometryOptimization)
 6. [Vibrational Frequencies](VibrationalFrequencies)
 7. [Special Cases](SpecialCases)
 8. [Techniques](Techniques)
