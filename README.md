@@ -14,7 +14,9 @@
 8. [Techniques](Techniques.md)
 9. [Check Convergence](CheckConvergence.md)
 
-
+## References
+1. [https://www.orcasoftware.de/tutorials_orca/index.html](https://www.orcasoftware.de/tutorials_orca/index.html)
+2. Orca Manual, Version 5.0.4
 
 
 
