@@ -17,3 +17,41 @@ end
 ```
 !DLPNO-CCSD(T) cc-pVTZ cc-pVTZ/C OPT NUMGRAD
 ```
+
+## 5.3 Convergence criteria
+
+### `LOOSEOPT`
+```
+Energy Change            TolE     ....  3.0000e-05 Eh
+Max. Gradient            TolMAXG  ....  2.0000e-03 Eh/bohr
+RMS Gradient             TolRMSG  ....  5.0000e-04 Eh/bohr
+Max. Displacement        TolMAXD  ....  1.0000e-02 bohr
+RMS Displacement         TolRMSD  ....  7.0000e-03 bohr
+```
+
+### `NORMALOPT`
+```
+Energy Change            TolE     ....  5.0000e-06 Eh
+Max. Gradient            TolMAXG  ....  3.0000e-04 Eh/bohr
+RMS Gradient             TolRMSG  ....  1.0000e-04 Eh/bohr
+Max. Displacement        TolMAXD  ....  4.0000e-03 bohr
+RMS Displacement         TolRMSD  ....  2.0000e-03 bohr
+```
+
+### `TIGHTOPT`
+```
+Energy Change            TolE     ....  1.0000e-06 Eh
+Max. Gradient            TolMAXG  ....  1.0000e-04 Eh/bohr
+RMS Gradient             TolRMSG  ....  3.0000e-05 Eh/bohr
+Max. Displacement        TolMAXD  ....  1.0000e-03 bohr
+RMS Displacement         TolRMSD  ....  6.0000e-04 bohr
+```
+
+### `VERYTIGHTOPT`
+```
+Energy Change            TolE     ....  2.0000e-07 Eh
+Max. Gradient            TolMAXG  ....  3.0000e-05 Eh/bohr
+RMS Gradient             TolRMSG  ....  8.0000e-06 Eh/bohr
+Max. Displacement        TolMAXD  ....  2.0000e-04 bohr
+RMS Displacement         TolRMSD  ....  1.0000e-04 bohr
+```
