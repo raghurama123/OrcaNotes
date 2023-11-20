@@ -10,8 +10,8 @@ end
 ## 2.1 Optimal memory for helios
 
 - `%MaxCore 4000` for workqa, workqb
-- `%MaxCore 5000` workqd
-- `%MaxCore 14000` workq
-- `%MaxCore 16000` workqc
+- `%MaxCore 5000` for workqd
+- `%MaxCore 14000` for workq
+- `%MaxCore 16000` for workqc
 
 
