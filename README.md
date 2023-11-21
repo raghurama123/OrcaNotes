@@ -13,6 +13,7 @@
 7. [Special Cases](SpecialCases.md)
 8. [Techniques](Techniques.md)
 9. [Check Convergence](CheckConvergence.md)
+10. [Transition State Search](TransitionState.md)
 
 ## References
 1. [https://www.orcasoftware.de/tutorials_orca/index.html](https://www.orcasoftware.de/tutorials_orca/index.html)
