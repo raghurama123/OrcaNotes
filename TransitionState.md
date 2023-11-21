@@ -110,6 +110,7 @@ Following NEB, one can do a tight optimization of the TS structure
   MAXITER         50
   CONVERGENCE     Tight
 END
+```
 
 - Frequencies
 ```
