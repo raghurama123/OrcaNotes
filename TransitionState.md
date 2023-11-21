@@ -110,6 +110,12 @@ Following NEB, one can do a tight optimization of the TS structure
   MAXITER         50
   CONVERGENCE     Tight
 END
+
+%MAXCORE 4000
+
+%PAL
+  NPROCS 8
+END
 ```
 
 - Frequencies
@@ -131,9 +137,3 @@ Scaling factor for frequencies =  1.000000000  (already applied!)
    8:      2621.93 cm**-1
 ```
 
-%MAXCORE 4000
-
-%PAL
-  NPROCS 8
-END
-```
