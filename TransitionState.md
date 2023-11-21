@@ -1,4 +1,6 @@
-# 10. Nudged Elastic Band
+# 10. Transition State Search
+
+## 10.1 Nudged Elastic Band
 
 Here is an example input for HCN - HNC isomerization reaction
 
@@ -28,7 +30,7 @@ END
 
 Here are the geometries used
 
-## HCN.xyz
+### HCN.xyz
 ```
 3
 HCN
@@ -36,7 +38,8 @@ C         -2.76788        0.86239        0.00000
 N         -1.61084        0.87791        0.00000
 H         -3.82622        0.84820        0.00000
 ```
-## HNC.xyz 
+
+### HNC.xyz 
 ```
 3
 HNC
@@ -44,7 +47,7 @@ C         -2.76788        0.86239        0.00000
 N         -1.61084        0.87791        0.00000
 H         -0.53913        0.93704       -0.00000
 ```
-## TS.xyz 
+### TS.xyz 
 ```
 3
 TS
@@ -53,7 +56,7 @@ N         -1.61084        0.87791        0.00000
 H         -2.29372        1.98091       -0.00000
 ```
 
-## Output
+### Output
 - Energy
 ```
 ---------------------------------------------------------------
@@ -91,4 +94,45 @@ Scaling factor for frequencies =  1.000000000  (already applied!)
    6:     -1130.57 cm**-1 ***imaginary mode***
    7:      2089.81 cm**-1
    8:      2621.95 cm**-1
+```
+
+## 10.2 OptTS
+
+Following NEB, one can do a tight optimization of the TS structure
+```
+!B3LYP DEF2-SVP D4 OptTS FREQ TightSCF
+
+* XYZfile 0 1 TS_NEB_NEB-TS_converged.xyz
+
+%GEOM
+  CALC_HESS       TRUE
+  RECALC_HESS     5
+  MAXITER         50
+  CONVERGENCE     Tight
+END
+
+- Frequencies
+```
+-----------------------
+VIBRATIONAL FREQUENCIES
+-----------------------
+
+Scaling factor for frequencies =  1.000000000  (already applied!)
+
+   0:         0.00 cm**-1
+   1:         0.00 cm**-1
+   2:         0.00 cm**-1
+   3:         0.00 cm**-1
+   4:         0.00 cm**-1
+   5:         0.00 cm**-1
+   6:     -1130.55 cm**-1 ***imaginary mode***
+   7:      2089.82 cm**-1
+   8:      2621.93 cm**-1
+```
+
+%MAXCORE 4000
+
+%PAL
+  NPROCS 8
+END
 ```
