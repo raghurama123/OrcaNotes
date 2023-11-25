@@ -39,5 +39,14 @@ H    -2.07086     1.65422    -0.79801
 *
 ```
 
-`TIMECON`
+## `TIMECON`
 - The `Timecon` modifier sets the coupling strength of the thermostat (large time constants correspond to weak coupling). The default value is 10 fs, which is a relatively strong coupling. For a production run, 100 fs would be appropriate.
+
+## `TIMESTEP`
+```
+%MD
+  TIMESTEP  1.0_fs
+  TIMESTEP 41.3_au # identical, 1 au = 0.02419 fs
+  TIMESTEP  1.0    # identical, as default time unit in MD module is fs
+END
+```
