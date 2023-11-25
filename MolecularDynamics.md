@@ -1,4 +1,4 @@
-# 11 Molecular Dynamics
+# 11. Molecular Dynamics
 
 - In contrast to general ORCA input, the MD input is not based on keywords, but on commands, which are executed consecutively on a line-by-line basis starting at the top (like, e. g., in a shell script). This means that identical commands with different arguments may be given, coming into effect when the interpreter reaches the corresponding line. This enables to perform multiple simulations (e. g., pre-equilibration and production run) within a single input file:
 
@@ -48,5 +48,15 @@ H    -2.07086     1.65422    -0.79801
   TIMESTEP  1.0_fs
   TIMESTEP 41.3_au # identical, 1 au = 0.02419 fs
   TIMESTEP  1.0    # identical, as default time unit in MD module is fs
+END
+```
+
+## `RESTART`
+- If `basename.mdrestart` exists, restart using
+```
+%MD
+  ...
+  RESTART IFEXISTS
+  RUN     100
 END
 ```
