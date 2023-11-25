@@ -60,3 +60,11 @@ END
   RUN     100
 END
 ```
+
+## `CONSTRAINT`
+- `Constraint Add Cartesian 3` would fix the fourth atom in the simulation at its current position in space.
+- `Constraint Add Cartesian 3 Target 5.0 1.0 1.0`
+- `Constraint Add Cartesian 3 X Target 1.0` would constrain the X coordinate of atom 3 to the absolute value 1.0, but would not influence movement along the Y and Z coordinate at all.
+- `Constraint Add Distance 3 5` would fix the distance between atom 3 and 5 to its current value.
+- `Constraint Add Distance 3 5 Target 350_pm`
+- Similarly, angles and dihedral angles between atoms can be fixed with the Angle and Dihedral keywords. Angles are defined by three atom indices, and dihedral angles by four atom indices. 
