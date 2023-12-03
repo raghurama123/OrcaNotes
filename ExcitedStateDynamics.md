@@ -20,7 +20,7 @@
 END
 
 %PAL
-  PROCS 16
+  NPROCS 16
 END
 
 %GEOM
@@ -63,7 +63,7 @@ H        1.55873000        1.93054000        0.02515000
 END
 
 %PAL
-  PROCS 16
+  NPROCS 16
 END
 
 %GEOM
@@ -95,7 +95,7 @@ END
 END
 
 %PAL
-  PROCS 16
+  NPROCS 16
 END
 
 %TDDFT
