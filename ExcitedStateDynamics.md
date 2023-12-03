@@ -1,7 +1,8 @@
 # 12. Excited State Dynamics
 
 - We will follow Orca 5.0.4 Manual, "Section 8.15: Excited State Dynamics", pages 394-414.
-- A related section is "Section 9.38: Simulation and Fit of Vibronic Structure in Electronic Spectra, Resonance Raman Excitation Profiles and Spectra with the `ORCA_ASA` Program"
+- Also see "Section 9.38: Simulation and Fit of Vibronic Structure in Electronic Spectra, Resonance Raman Excitation Profiles and Spectra with the `ORCA_ASA` Program"
+- Also see "Section 9.39 More on the Excited State Dynamics module" for full list of keywords for `ORCA_ESD`
 
 ## 12.1 Absorption spectrum of Benzene using the ideal model, Adiabatic Hessian (AH)
 - Let's predict the absorption spectrum of benzene, which has one band above 220 nm correponding to a symmetry forbidden excitation to the S1 state. 
