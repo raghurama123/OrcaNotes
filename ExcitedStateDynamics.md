@@ -82,7 +82,7 @@ END
 ```
 
 ### 12.1.3 `ESD`
-- Since the first transition of benzene is symmetry forbidden with a tiny oscillator strength ($<10^{-6}$) and thus all the intensity comes from vibronic coupling (HT effect). So, we have to set `DOHT TRUE` in the ESD calculation. In molecules with strongly allowed transitions that usually can be left as FALSE (the default). 
+- Since the first transition of benzene is symmetry forbidden with a tiny oscillator strength ($\thickapprox 10^{-6}$ or less) and thus all the intensity comes from vibronic coupling (HT effect). So, we have to set `DOHT TRUE` in the ESD calculation. In molecules with strongly allowed transitions that usually can be left as FALSE (the default). 
 ```
 !wB97X-D3 RIJCOSX DEF2-SVP  DEF2/J TIGHTSCF ESD(ABS) XYZFILE
 
