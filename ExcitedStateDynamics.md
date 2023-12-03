@@ -4,7 +4,8 @@
 - A related section is "Section 9.38: Simulation and Fit of Vibronic Structure in Electronic Spectra, Resonance Raman Excitation Profiles and Spectra with the `ORCA_ASA` Program"
 
 ## 12.1 Absorption spectrum of Benzene using the ideal model, Adiabatic Hessian (AH)
-
+- Let's predict the absorption spectrum of benzene, which has one band above 220 nm correponding to a symmetry forbidden excitation to the S1 state. 
+ 
 ### 12.1.1 S0 state `OPT` and `FREQ`
 ```
 !wB97X-D3 RIJCOSX DEF2-SVP  DEF2/J TIGHTSCF TIGHTOPT FREQ XYZFILE
@@ -81,6 +82,7 @@ END
 ```
 
 ### 12.1.3 `ESD`
+- Since the first transition of benzene is symmetry forbidden with a tiny oscillator strength ($<10^{-6}$) and thus all the intensity comes from vibronic coupling (HT effect). So, we have to set `DOHT TRUE` in the ESD calculation. In molecules with strongly allowed transitions that usually can be left as FALSE (the default). 
 ```
 !wB97X-D3 RIJCOSX DEF2-SVP  DEF2/J TIGHTSCF ESD(ABS) XYZFILE
 
