@@ -5,7 +5,7 @@
 
 ## 12.1 Absorption spectrum of Benzene using the ideal model, Adiabatic Hessian (AH)
 
-### S0 state `OPT` and `FREQ`
+### 12.1.1 S0 state `OPT` and `FREQ`
 ```
 !wB97X-D3 RIJCOSX DEF2-TZVP  DEF2/J TIGHTSCF TIGHTOPT FREQ XYZFILE
 
@@ -48,7 +48,7 @@ H       -0.89264000        2.31520000        0.01653000
 H        1.55873000        1.93054000        0.02515000
 ```
 
-### S0 state `OPT` and `FREQ`
+### 12.1.2 S1 state `OPT` and `FREQ`
 ```
 !wB97X-D3 RIJCOSX DEF2-TZVP  DEF2/J TIGHTSCF TIGHTOPT FREQ XYZFILE
 
