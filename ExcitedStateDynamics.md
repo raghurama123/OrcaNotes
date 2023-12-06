@@ -82,7 +82,7 @@ END
 END
 ```
 
-### 12.1.3 `ESD`
+### 12.1.3 `ESD (ABS)`
 - Since the first transition of benzene is symmetry forbidden with a tiny oscillator strength ($\thickapprox 10^{-6}$ or less) and thus all the intensity comes from vibronic coupling (HT effect). So, we have to set `DOHT TRUE` in the ESD calculation. In molecules with strongly allowed transitions that usually can be left as FALSE (the default). 
 ```
 !wB97X-D3 RIJCOSX DEF2-SVP  DEF2/J TIGHTSCF ESD(ABS) XYZFILE
@@ -112,4 +112,67 @@ END
   ESHESSIAN    "s1.hess"
   DOHT TRUE
 END
+```
+
+### 12.1.4 `ESD (FLUOR)`
+```
+!wB97X-D3 RIJCOSX DEF2-SVP  DEF2/J TIGHTSCF ESD(FLUOR) XYZFILE
+
+%BASE "esd_flu"
+
+*XYZFILE 0 1 s0.xyz
+
+%MAXCORE 64000
+
+%SCF
+  MAXITER 150
+END
+
+%PAL
+  NPROCS 16
+END
+
+%TDDFT
+ NROOTS       5
+ IROOT        1
+ TDA          FALSE
+ TRIPLETS     FALSE
+END
+
+%ESD GSHESSIAN "s0.hess"
+  ESHESSIAN    "s1.hess"
+  DOHT TRUE
+  LINES           VOIGT
+  LINEW           75
+  INLINEW         200
+END
+```
+- NOTE: For plotting absorption and emission spectrum together, one has to normalize both the plots as done in [https://doi.org/10.1063/1.5010895](https://doi.org/10.1063/1.5010895).   
+- Fluoroescence rate constant is printed in the output
+```
+          ***Everything is set, now computing the correlation function***
+
+Homogeneous linewidth is:                       75.00 cm-1
+Inhomogeneous linewidth is:                     200.00 cm-1
+Number of points:                               65536
+Maximum time:                                   1061.77 fs
+Spectral resolution:                            5.00 cm-1
+Temperature used:                               298.15 K
+Z value:                                        1.703696e-44
+Cutoff for the correlation function:            1.00e-06
+Adiabatic energy difference:                    44188.52 cm-1
+0-0 energy difference:                          43045.64 cm-1
+Reference transition dipole (x,y,z):            (-0.00420 0.00000),
+                                                (0.00290 0.00000),
+                                                (0.00001 0.00000) 
+Calculating correlation function:               ...done
+Last element of the correlation function:       0.000000,0.000000
+Computing the Fourier Transform:                ...done
+
+The calculated fluorescence rate constant is    2.043006e+07 s-1          <----- HERE
+with 0.02% from FC and 99.98% from HT
+
+The fluorescence spectrum was saved in          esd_flu.spectrum
+
+Total run time: 0 hours 6 minutes 49 seconds
 ```
