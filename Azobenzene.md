@@ -81,15 +81,38 @@ H         -5.31585        3.41107       -0.36509
 
 * XYZFILE 0 1 Z_azobenzene.xyz
 
-%MAXCORE 4000
+%MAXCORE 5000
 
 %PAL
-  NPROCS 16
+  NPROCS 24
 END
 
 %GEOM
   CALC_HESS TRUE
   RECALC_HESS 5
   MAXITER 50
+END
+```
+
+## 13.3 TDDFT
+
+- Here is the input file for Z-isomer. Change accordingly for the E-isomer.
+
+```
+!WB97X-D3 RIJCOSX DEF2-TZVP DEF2/J TIGHTSCF CPCM(HEXANE)
+
+* XYZFILE 0 1 Z_opt.xyz
+
+%MAXCORE 5000
+
+%PAL
+  NPROCS 24
+END
+
+%TDDFT
+ NROOTS       20
+ IROOT        1
+ TDA          FALSE
+ TRIPLETS     FALSE
 END
 ```
