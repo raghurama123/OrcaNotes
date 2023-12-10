@@ -82,7 +82,7 @@ END
 END
 ```
 
-### 12.2 `ESD (ABS)`
+## 12.2 `ESD (ABS)`
 - Since the first transition of benzene is symmetry forbidden with a tiny oscillator strength ($\thickapprox 10^{-6}$ or less) and thus all the intensity comes from vibronic coupling (HT effect). So, we have to set `DOHT TRUE` in the ESD calculation. In molecules with strongly allowed transitions that usually can be left as FALSE (the default). 
 ```
 !wB97X-D3 RIJCOSX DEF2-SVP  DEF2/J TIGHTSCF ESD(ABS) XYZFILE
@@ -114,7 +114,7 @@ END
 END
 ```
 
-### 12.3 `ESD (FLUOR)`
+## 12.3 `ESD (FLUOR)`
 ```
 !wB97X-D3 RIJCOSX DEF2-SVP  DEF2/J TIGHTSCF ESD(FLUOR) XYZFILE
 
@@ -180,7 +180,7 @@ Total run time: 0 hours 6 minutes 49 seconds
 ## 12.4 TCUTFREQ
 - Sometimes, low frequencies have displacements that are just too large, or the experimental modes are too anharmonic and you might want to remove them. It is possible to do that setting the `TCUTFREQ` flag (in cm−1), and all frequencies below the given threshold will be removed.
 
-### 12.5 `ESD (ABS)` with STEOM-DLPNO-CCSD
+## 12.5 `ESD (ABS)` with STEOM-DLPNO-CCSD
 
 - Do single point DLPNO using `APPROXADEN TRUE` and DFT-level geometry and hessian
 
