@@ -2,6 +2,8 @@
 
 The following is based on [https://www.orcasoftware.de/tutorials_orca/spec/UVVis.html](https://www.orcasoftware.de/tutorials_orca/spec/UVVis.html).   
 
+## 13.1 Initial geometries
+
 - Initial geometries created with Avogadro are as follows
 - cis-isomer
 ```
@@ -68,5 +70,26 @@ H         -3.23967       -1.05927        0.21896
 H         -6.68921        1.38191       -0.52444
 H         -5.66800       -0.85485       -0.22595
 H         -5.31585        3.41107       -0.36509
-(base) [rr@helios wB97XD3_def2TZVP]$ cat Z_azobenzene.xyz 
+```
+
+## 13.2 Geometry optimization
+
+- Here is the input file for Z-isomer. Change accordingly for the E-isomer.
+
+```
+!WB97X-D3 RIJCOSX DEF2-TZVP DEF2/J TIGHTSCF OPT FREQ CPCM(HEXANE)
+
+* XYZFILE 0 1 Z_azobenzene.xyz
+
+%MAXCORE 4000
+
+%PAL
+  NPROCS 16
+END
+
+%GEOM
+  CALC_HESS TRUE
+  RECALC_HESS 5
+  MAXITER 50
+END
 ```
