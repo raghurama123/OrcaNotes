@@ -143,11 +143,17 @@ END
 ## 13.5 Results
 
 - Wavelength of absorbance for E and Z isomers.
+- Geometry optimized using reported geometries at the level `wB97X-D3/def2TZVP`
+- `RIJCOSX TIGHTSCF CPCM(HEXANE) AUTOAUX` unless mentioned in all calculations
 
 ```
 Method                    E     Z
+
+wB97X-D3/def2TZVP         480   402   
+wB2PLYP/def2TZVP          437   397   
+STEOM-DLPNO-CCSD/def2TZVP 509   392   
+STEOM-DLPNO-CCSD/def2TZVP 509   392   DEF2-TZVP/C instead of AUTOAUX
+
 Exp.                      490   404
-WB97X-D3/def2TZVP         480   402
-STEOM-DLPNO-CCSD/def2TZVP 509   392
 ```
 
