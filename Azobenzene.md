@@ -148,11 +148,15 @@ END
 
 ```
 Method           E     Z
+ 
+PBE0             504   413
+B3LYP            505   418   (507 and 417 in Orca's tutorial page)
 
-PBE0
-B3LYP      
-wB97X-D3         480   402   
-wB2PLYP          474   396   
+CAM-B3LYP        485   407
+wB97X-D3         480   402
+
+wB2PLYP          474   396
+
 STEOM-DLPNO-CCSD 509   392   
 STEOM-DLPNO-CCSD 509   392   DEF2-TZVP/C instead of AUTOAUX
 
