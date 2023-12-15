@@ -112,7 +112,6 @@ END
 
 %TDDFT
  NROOTS       20
- IROOT        1
  TDA          FALSE
  TRIPLETS     FALSE
 END
