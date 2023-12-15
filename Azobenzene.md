@@ -100,7 +100,7 @@ END
 - Here is the input file for E-isomer. Change accordingly for the Z-isomer.
 
 ```
-!WB97X-D3 RIJCOSX DEF2-TZVP DEF2/J TIGHTSCF CPCM(HEXANE)
+!WB97X-D3 RIJCOSX DEF2-TZVP AUTOAUX TIGHTSCF CPCM(HEXANE)
 
 * XYZFILE 0 1 E_opt.xyz
 
@@ -122,7 +122,7 @@ END
 - Here is the input file for E-isomer. Change accordingly for the Z-isomer.
 
 ```
-!STEOM-DLPNO-CCSD DEF2-TZVP DEF2-TZVP/C RIJCOSX CPCM(HEXANE) TIGHTSCF
+!STEOM-DLPNO-CCSD DEF2-TZVP AUTOAUX RIJCOSX CPCM(HEXANE) TIGHTSCF
 
 * XYZFILE 0 1 E_opt.xyz
 
