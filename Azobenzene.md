@@ -117,7 +117,7 @@ END
 END
 ```
 
-## 13.4 STEOM0DLPNO-CCSD
+## 13.4 STEOM-DLPNO-CCSD
 
 - Here is the input file for E-isomer. Change accordingly for the Z-isomer.
 
