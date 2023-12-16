@@ -12,7 +12,7 @@ the percentage active of each root.
   - For `OTHRESH` and `VTHRESH` you should not go below `1e-3`, as the benefits are not so obvious. Another trick to achieve a better convergence is to play with the number of roots. It is often not necessary to compute a lot of roots if you are only interested in the first 3 for example. If some high energy roots have some low percentage active character, removing them can help for the convergence of
 other roots.
 
-## 14.2 Case: Z-diazo derivative from the manual [https://www.orcasoftware.de/tutorials_orca/spec/UVVis.html](https://www.orcasoftware.de/tutorials_orca/spec/UVVis.html)
+## 14.1.2 Case: Z-diazo derivative from the manual [https://www.orcasoftware.de/tutorials_orca/spec/UVVis.html](https://www.orcasoftware.de/tutorials_orca/spec/UVVis.html)
 
 ```
 !STEOM-DLPNO-CCSD DEF2-TZVP DEF2-TZVP/C RIJCOSX TightSCF CPCM(HEXANE)
@@ -118,10 +118,6 @@ Coordinates from ORCA-job Z_wB97XD3_opt
   H   1.76545790891159     -2.60052911379281      0.19580712746606
 ```
 
-
-
-
-
 ```
 
 IROOT=  1:  0.117369 au     3.194 eV   25759.6 cm**-1
@@ -139,7 +135,7 @@ Warning:: the state may have not converged with respect to active space
 -------------------- Handle with Care -------------------- 
 ```
 
-## 14.1.2 Convergence options
+## 14.1.3 Convergence options
 - Here are the possible values and their definition
 ```
 %SCF
@@ -153,7 +149,7 @@ Warning:: the state may have not converged with respect to active space
   EXTREME     # close to the numerical zero of the computer in double-precision arithmetic
 END
 ```
-- Here are all the options but we normally will not explicitly change these in the input file but will choose one of the options given above.
+- Here are all the options, but we usually will not explicitly change these in the input file but will choose one of the options given above.
 
 | Parameter | LoosePNO | NormalPNO | TightPNO | 
 |---|---|---|---|
