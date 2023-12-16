@@ -138,6 +138,7 @@ Warning:: the state may have not converged with respect to active space
 ## 14.1.3 Convergence options
 - Here are the possible values and their definition
 - Here are all the options, but we usually will not explicitly change these in the input file but will choose one of the options given above.
+- `TightPNO` triggers the full iterative (DLPNO-MP2) treatment in the MP2 guess, whereas the other options use a semicanonical MP2 calculation.
 
 | Parameter | LoosePNO | NormalPNO | TightPNO | 
 |---|---|---|---|
