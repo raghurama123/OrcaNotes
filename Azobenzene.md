@@ -156,13 +156,15 @@ wB97X-D3           480   402
 
 wB2PLYP            474   396
 
-STEOM-DLPNO-CCSD   509   392   
+STEOM-DLPNO-CCSD   509   392     (shift 117 nm)
 STEOM-DLPNO-CCSD   509   392   DEF2-TZVP/C instead of AUTOAUX
+                  2.46   3.18 eV (shift 0.72 eV)
 
 RI-ADC2/VDZ/Qchem  455   372
                   2.73  3.34  eV 
 RI-ADC2/VTZ/Qchem      
 
-Exp.               490   404
+Exp.               490   404      (shift 86 nm)
+                  2.53   3.07 eV  (shift 0.54 eV)   
 ```
 
