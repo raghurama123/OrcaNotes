@@ -157,7 +157,7 @@ wB97X-D3           480   402
 wB2PLYP            474   396
 
 STEOM-DLPNO-CCSD   509   392     (shift 117 nm)
-STEOM-DLPNO-CCSD   505   411     TightPNO (shift of 56 nm)
+STEOM-DLPNO-CCSD   505   411     TightPNO (shift of 94 nm)
 
 STEOM-DLPNO-CCSD   509   392   DEF2-TZVP/C instead of AUTOAUX
                   2.46   3.18 eV (shift 0.72 eV)
