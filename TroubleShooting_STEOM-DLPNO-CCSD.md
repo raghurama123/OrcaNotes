@@ -1,6 +1,6 @@
-# 14. Troubleshooting STEOM-DLPNO-CCSD
+# 14.1 Troubleshooting STEOM-DLPNO-CCSD
 
-## 14.1 Excerpts from the Manual
+## 14.1.1 Excerpts from the Manual
 
 - `TIGHTSCF` is a must go for any CCSD calculation.
 - We will recommend using `TIGHTPNO` for all molecules as it is not a lot more expensive and helps achieving
@@ -138,3 +138,34 @@ Percentage Active Character     97.23
 Warning:: the state may have not converged with respect to active space 
 -------------------- Handle with Care -------------------- 
 ```
+
+## 14.1.2 Convergence options
+- Here are the possible values and their definition
+```
+%SCF
+  CONVERGENCE # The default convergence is between medium and strong 
+  SLOPPY      # very weak convergence 
+  LOOSE       # still weak convergence
+  MEDIUM      # intermediate accuracy
+  STRONG      # stronger 
+  TIGHT       # still stronger
+  VERYTIGHT   # even stronger
+  EXTREME     # close to the numerical zero of the computer in double-precision arithmetic
+END
+```
+- Here are all the options but we normally will not explicitly change these in the input file but will choose one of the options given above.
+
+| Parameter | LoosePNO | NormalPNO | TightPNO | 
+|---|---|---|---|
+| TCutPairs      | 1E-3   | 1E-4  | 1E-5   |
+| TCutDO   | 2E-2   | 1E-2  | 5E-3   |
+| TCutPNO   | 1E-6   | 3.33E-7  | 1E-7   | 
+| TCutMKN    | 1E-3   | 1E-3  | 1E-3   |
+| MP2 pair treatment      | semicanonical   | semicanonical  | full iterative   |
+
+- `TolE` is energy change between two cycles, `Last Energy change`
+- `TolRMSP` is RMS density change, `Last MAX-Density change`
+- `TolMaxP` is maximum density change, `Last RMS-Density change`
+- `TolErr` is DIIS error convergence, ``
+- `TolG` is orbital gradient convergence, `Last RMS-Density change`
+- `TolX` is orbital rotation angle convergence, `Last RMS-Density change`
