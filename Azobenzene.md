@@ -159,7 +159,8 @@ wB2PLYP            474   396
 STEOM-DLPNO-CCSD   509   392   
 STEOM-DLPNO-CCSD   509   392   DEF2-TZVP/C instead of AUTOAUX
 
-RI-ADC2/VDZ/Qchem  455
+RI-ADC2/VDZ/Qchem  455   372
+                  2.73  3.34  eV 
 RI-ADC2/VTZ/Qchem      
 
 Exp.               490   404
