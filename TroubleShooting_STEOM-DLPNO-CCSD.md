@@ -137,18 +137,6 @@ Warning:: the state may have not converged with respect to active space
 
 ## 14.1.3 Convergence options
 - Here are the possible values and their definition
-```
-%SCF
-  CONVERGENCE # The default convergence is between medium and strong 
-  SLOPPY      # very weak convergence 
-  LOOSE       # still weak convergence
-  MEDIUM      # intermediate accuracy
-  STRONG      # stronger 
-  TIGHT       # still stronger
-  VERYTIGHT   # even stronger
-  EXTREME     # close to the numerical zero of the computer in double-precision arithmetic
-END
-```
 - Here are all the options, but we usually will not explicitly change these in the input file but will choose one of the options given above.
 
 | Parameter | LoosePNO | NormalPNO | TightPNO | 
@@ -159,9 +147,8 @@ END
 | TCutMKN    | 1E-3   | 1E-3  | 1E-3   |
 | MP2 pair treatment      | semicanonical   | semicanonical  | full iterative   |
 
-- `TolE` is energy change between two cycles, `Last Energy change`
-- `TolRMSP` is RMS density change, `Last MAX-Density change`
-- `TolMaxP` is maximum density change, `Last RMS-Density change`
-- `TolErr` is DIIS error convergence, ``
-- `TolG` is orbital gradient convergence, `Last RMS-Density change`
-- `TolX` is orbital rotation angle convergence, `Last RMS-Density change`
+- `TCutPairs` is the cut-off for the pair truncation  
+- `TCutDO` is the cut-off for the PNO truncation
+- `TCutPNO` is the cut-off for the DLPNO domain construction
+- `TCutMKN` is the cut-off for the local fit
+
