@@ -137,6 +137,16 @@ Warning:: the state may have not converged with respect to active space
 
 ## 14.1.3 Convergence options
 - Here are the possible values and their definition
+```
+%MDCI
+  TCUTPAIRS       1e-4         # cut-off  for the  pair truncation
+  TCUTPNO         3.33e-7      # cut-off  for the  PNO truncation
+  TCUTDO          1e-2         # cut-off  for the  DLPNO domain construction
+  TCUTMKN         1e-3         # cut-off  for the  local fit
+  TCUTPNOSINGLES -1            # -1= use 0.03*TCutPNO
+END
+
+```
 - Here are all the options, but we usually will not explicitly change these in the input file but will choose one of the options given above.
 - `TightPNO` triggers the full iterative (DLPNO-MP2) treatment in the MP2 guess, whereas the other options use a semicanonical MP2 calculation.
 
@@ -147,9 +157,7 @@ Warning:: the state may have not converged with respect to active space
 | TCutPNO   | 1E-6   | 3.33E-7  | 1E-7   | 
 | TCutMKN    | 1E-3   | 1E-3  | 1E-3   |
 | MP2 pair treatment      | semicanonical   | semicanonical  | full iterative   |
+|TCutPNOSingles | 3E-8 | 1E-8 | 3E-9 |
 
-- `TCutPairs` is the cut-off for the pair truncation  
-- `TCutDO` is the cut-off for the PNO truncation
-- `TCutPNO` is the cut-off for the DLPNO domain construction
-- `TCutMKN` is the cut-off for the local fit
+
 
