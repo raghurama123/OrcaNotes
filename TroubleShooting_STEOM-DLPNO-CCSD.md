@@ -176,6 +176,7 @@ IROOT=  1:  0.111334 au     3.030 eV   24434.9 cm**-1
 ## TcutMKN
 - Here is something which is influenced by `TCUTMKN`. The default value is `1E-3`.
 - Following is a block from a `TIGHTPNO` calculation.
+- Fitting domains are determined by means of orbital Mulliken populations with a threshold `TCutMKN = 10−3`. This threshold results in an error contribution that is typically about an order of magnitude smaller than the overall total energy deviation from RI-MP2.
 ```
 %MDCI
   NROOTS         5
