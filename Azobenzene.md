@@ -153,7 +153,7 @@ END
 |B3LYP              |505   |418 |(507 and 417 in Orca's tutorial page)|
 |CAM-B3LYP          |485   |407||
 |wB97X-D3           |480   |402||
-|                   |xxx   |xxx |TDA True|
+|                   |463   |388 |TDA True|
 |                   |      | 405 |B3LYP D4 geom, 3.059 eV|
 |                   |      |402 |wB97X-D3 geom, 3.084 eV|
 |wB2PLYP            |474   |396||
