@@ -172,6 +172,44 @@ IROOT=  1:  0.108872 au     2.963 eV   23894.6 cm**-1
 
 wB97X-D3 geom
 IROOT=  1:  0.111334 au     3.030 eV   24434.9 cm**-1
-``` 
+```
+## TcutMKN
+- Here is something which is influenced by `TCUTMKN`. The default value is `1E-3`.
+- Following is a block from a `TIGHTPNO` calculation.
+```
+%MDCI
+  NROOTS         5
+  DOSOLV         TRUE
+  MAXITER        500
+  TCUTPNOSINGLES 1E-12
+  END
+```
+- The output cautions about `1 problematic atom`
+```
+Mulliken population of the LMOs            ... ok
+Performing proximity check                 ... 
+ found 1 problematic atoms
+   => In all likelyhood your results will be entirely fine!
+   => In case you don't want to trust it, decrease TCutMKN to below 0.00038702.
+   => but note that this is probably not necessary but will increase execution time
+Calculating differential overlap integrals ... ok
+```
+- So, we tighten `TIGHTPNO` as follows
+```
+%MDCI
+  NROOTS         5
+  DOSOLV         TRUE
+  MAXITER        500
+  TCUTMKN        1E-4 
+  TCUTPNOSINGLES 1E-12
+  END
+```
+- And, the message disappears.
+```
+--------------------------
+Mulliken population of the LMOs            ... ok
+Performing proximity check                 ... No problems found
+Calculating differential overlap integrals ... ok
+```
 
 
