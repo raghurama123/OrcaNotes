@@ -3,16 +3,40 @@
 ## 14.1.1 Excerpts from the Manual
 
 - `TIGHTSCF` is a must go for any CCSD calculation.
-- We will recommend using `TIGHTPNO` for all molecules as it is not a lot more expensive and helps achieving
+- We will recommend using `TIGHTPNO` for all molecules as it is not a lot more expensive and helps to achieve
 a better convergence.
 - The `OTHRESH`, `VTHRESH` and `TCutPNOSingles` keywords help with converging the calculations, increasing
 the percentage active of each root.
-  - In contrary to standard STEOM-CCSD, we would acknowledge that the roots are converged when the percentage active character is at least 96 %. Of course you have to check that the amplitude and orbitals associated with the excitation are correct (and what you expect).
+  - In contrary to standard STEOM-CCSD, we would acknowledge that the roots converge when the percentage active character is at least 96 %. Of course, you have to check that the amplitude and orbitals associated with the excitation are correct (and what you expect).
   - Tightening the 3 keywords mentioned will increase this percentage active character. The most important one is the `TCutPNOSingles` one. Be careful the computational cost increases exponentially when tightened. In more case `1e-12` or `5e-12` should be enough.
   - For `OTHRESH` and `VTHRESH` you should not go below `1e-3`, as the benefits are not so obvious. Another trick to achieve a better convergence is to play with the number of roots. It is often not necessary to compute a lot of roots if you are only interested in the first 3 for example. If some high energy roots have some low percentage active character, removing them can help for the convergence of
 other roots.
 
-## 14.1.2 Case: Z-diazo derivative from the manual [https://www.orcasoftware.de/tutorials_orca/spec/UVVis.html](https://www.orcasoftware.de/tutorials_orca/spec/UVVis.html)
+## 14.1.2 Convergence options
+- Here are the possible values and their definition
+```
+%MDCI
+  TCUTPAIRS       1e-4         # cut-off  for the  pair truncation
+  TCUTPNO         3.33e-7      # cut-off  for the  PNO truncation
+  TCUTDO          1e-2         # cut-off  for the  DLPNO domain construction
+  TCUTMKN         1e-3         # cut-off  for the  local fit
+  TCUTPNOSINGLES -1            # -1= use 0.03*TCutPNO
+END
+
+```
+- Here are all the options, but we usually will not explicitly change these in the input file but will choose one of the options given above.
+- `TightPNO` triggers the full iterative (DLPNO-MP2) treatment in the MP2 guess, whereas the other options use a semicanonical MP2 calculation.
+
+| Parameter | LoosePNO | NormalPNO | TightPNO | 
+|---|---|---|---|
+| TCutPairs      | 1E-3   | 1E-4  | 1E-5   |
+| TCutDO   | 2E-2   | 1E-2  | 5E-3   |
+| TCutPNO   | 1E-6   | 3.33E-7  | 1E-7   | 
+| TCutMKN    | 1E-3   | 1E-3  | 1E-3   |
+| MP2 pair treatment      | semicanonical   | semicanonical  | full iterative   |
+|TCutPNOSingles | 3E-8 | 1E-8 | 3E-9 |
+
+## 14.1.3 Case: Z-diazo derivative from the manual [https://www.orcasoftware.de/tutorials_orca/spec/UVVis.html](https://www.orcasoftware.de/tutorials_orca/spec/UVVis.html)
 
 ```
 !STEOM-DLPNO-CCSD DEF2-TZVP DEF2-TZVP/C RIJCOSX TightSCF CPCM(HEXANE)
@@ -135,29 +159,15 @@ Warning:: the state may have not converged with respect to active space
 -------------------- Handle with Care -------------------- 
 ```
 
-## 14.1.3 Convergence options
-- Here are the possible values and their definition
-```
-%MDCI
-  TCUTPAIRS       1e-4         # cut-off  for the  pair truncation
-  TCUTPNO         3.33e-7      # cut-off  for the  PNO truncation
-  TCUTDO          1e-2         # cut-off  for the  DLPNO domain construction
-  TCUTMKN         1e-3         # cut-off  for the  local fit
-  TCUTPNOSINGLES -1            # -1= use 0.03*TCutPNO
-END
+## 14.1.4 Solution
+- The calculations converged with `TIGHTPNO`
 
 ```
-- Here are all the options, but we usually will not explicitly change these in the input file but will choose one of the options given above.
-- `TightPNO` triggers the full iterative (DLPNO-MP2) treatment in the MP2 guess, whereas the other options use a semicanonical MP2 calculation.
+B3LYP geom
+IROOT=  1:  0.108872 au     2.963 eV   23894.6 cm**-1
 
-| Parameter | LoosePNO | NormalPNO | TightPNO | 
-|---|---|---|---|
-| TCutPairs      | 1E-3   | 1E-4  | 1E-5   |
-| TCutDO   | 2E-2   | 1E-2  | 5E-3   |
-| TCutPNO   | 1E-6   | 3.33E-7  | 1E-7   | 
-| TCutMKN    | 1E-3   | 1E-3  | 1E-3   |
-| MP2 pair treatment      | semicanonical   | semicanonical  | full iterative   |
-|TCutPNOSingles | 3E-8 | 1E-8 | 3E-9 |
-
+wB97X-D3 geom
+IROOT=  1:  0.111334 au     3.030 eV   24434.9 cm**-1
+``` 
 
 
