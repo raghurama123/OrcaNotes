@@ -21,6 +21,10 @@ other roots.
   TCUTDO          1e-2         # cut-off  for the  DLPNO domain construction
   TCUTMKN         1e-3         # cut-off  for the  local fit
   TCUTPNOSINGLES -1            # -1= use 0.03*TCutPNO
+  OThresh         0.001        # Cut-off occupation of CIS natural orbitals in IP calculation
+  VThresh         0.001        # Cut-off occupation of CIS natural orbitals in EA calculation
+  IPSThrs         80           #  The percentage singles threshold for the IP calculation
+  EASThrs         80           #  The percentage singles threshold for the EA calculation
 END
 
 ```
