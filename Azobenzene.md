@@ -162,6 +162,9 @@ STEOM-DLPNO-CCSD   505   411     TightPNO (shift of 94 nm)
 STEOM-DLPNO-CCSD   509   392   DEF2-TZVP/C instead of AUTOAUX
                   2.46   3.18 eV (shift 0.72 eV)
 
+                         421 (B3LYP D4 geom), 2.963 eV
+                         412 (wB97X-D3 geom), 3.030 eV
+
 RI-ADC2/VDZ/Qchem  455   372
                   2.73  3.34  eV 
 RI-ADC2/VTZ/Qchem      
