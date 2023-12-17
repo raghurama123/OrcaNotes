@@ -52,6 +52,23 @@ END
   TCutPNOSingles = 1E-9
   TCutC = 10−3
 ```
+-- Also see the post on Orca Forum
+```
+Dear DLPNO gurus:
+
+There are a number of references in the literature to people doing DLPNO-CCSD(T1) with "VeryTightPNO" parameters. Since a reviewer of a recent paper asked us to try such calculations, I needed to find the parameters. It seems there are two sets of such parameters circulating in the literature:
+(a) TcutPNO 1e-8, TcutDO 1e-2, TcutMKN 1e-4, TcutPairs 1e-6, TcutC 1e-3, TCutPNOSingle 3e-9 [Pavošević et al. from 2017; http://doi.org/10.1063/1.4979993]
+(b) TcutPNO 1e-8, TcutDO 5e-3, TcutMKN 1e-4, TcutPairs 1e-5, [Kumar and Valeev, Neese from 2020; https://arxiv.org/pdf/2008.03237.pdf]. TCutC and TCutPNOSingle are unspecified in the input, but a test calculation revealed ORCA derives from the other parameters TCutC: 1.000e-04 and TCutPNOSingles: 3.000e-10
+For comparison, these are the TightPNO parameters from an ORCA 4.2.1 output:
+TightPNO: TcutPNO 1e-7, TcutDO 5e-3, TcutMKN 1e-3, TcutPairs 1e-5, TcutC 1e-4, TCutPNOSingles: 3.000e-09
+
+In parameter set (a), TCutDO actually is looser than in TightPNO, which strikes me as counterintuitive. In parameter set (b), it is the same as for TightPNO, but so is TCutPairs, which also strikes me as a little strange.
+
+Could anybody tell me whether to use (a), (b), min{(a)_i,(b)_i}, or something else entirely?
+
+Many thanks in advance!
+Gershom
+```
 
 ## 14.1.3 Case: Z-diazo derivative from the manual [https://www.orcasoftware.de/tutorials_orca/spec/UVVis.html](https://www.orcasoftware.de/tutorials_orca/spec/UVVis.html)
 
