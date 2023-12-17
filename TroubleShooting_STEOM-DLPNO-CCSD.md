@@ -21,6 +21,7 @@ other roots.
   TCUTDO          1e-2         # cut-off  for the  DLPNO domain construction
   TCUTMKN         1e-3         # cut-off  for the  local fit
   TCUTPNOSINGLES -1            # -1= use 0.03*TCutPNO
+  TCUTPRE         1E-6         # Energy threshold for dipole prescreening
   TCutC           1e-3         # Cutoff for PAO coefficient truncation
   OThresh         0.001        # Cut-off occupation of CIS natural orbitals in IP calculation
   VThresh         0.001        # Cut-off occupation of CIS natural orbitals in EA calculation
@@ -37,9 +38,10 @@ END
 | TCutPairs      | 1E-3   | 1E-4  | 1E-5   |
 | TCutDO   | 2E-2   | 1E-2  | 5E-3   |
 | TCutPNO   | 1E-6   | 3.33E-7  | 1E-7   | 
+| TcutPre    | 1E-6 | 1E-6 | 1E-7 |
+|TCutPNOSingles | 3E-8 | 1E-8 | 3E-9 |
 | TCutMKN    | 1E-3   | 1E-3  | 1E-3   |
 | MP2 pair treatment      | semicanonical   | semicanonical  | full iterative   |
-|TCutPNOSingles | 3E-8 | 1E-8 | 3E-9 |
 
 - `VeryTightPNO` may be defined as in [this 2017 paper](https://doi.org/10.1063/1.4979993)
 ```
