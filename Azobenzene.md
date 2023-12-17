@@ -164,6 +164,7 @@ END
 |                   |      |421 |TightPNO, B3LYP D4 geom, 2.963 eV|
 |                   |      |424 |TightPNO, TCutPNOSingles 1E-12, B3LYP D4 geom, 2.944 eV|
 |                   |      |412 |TightPNO, wB97X-D3 geom), 3.030 eV|
+|                   |      |429 |TightPNO, TCutPNOSingles 1E-12, wB97X-D3 geom, 2.907 eV|
 |RI-ADC2/VDZ/Qchem  |455   |372||
 |                  |2.73  |3.34  eV||
 |RI-ADC2/VTZ/Qchem  |    |||
