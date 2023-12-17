@@ -52,7 +52,7 @@ END
   TCutPNOSingles = 1E-9
   TCutC = 10−3
 ```
--- Also see the post on Orca Forum
+- Also see the post on Orca Forum
 ```
 Dear DLPNO gurus:
 
