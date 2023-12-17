@@ -162,9 +162,11 @@ END
 |STEOM-DLPNO-CCSD   |509   |392 |DEF2-TZVP/C instead of AUTOAUX|
 |                  |2.46   |3.18 eV |shift 0.72 eV|
 |                   |      |421 |TightPNO, B3LYP D4 geom, 2.963 eV|
-|                   |      |424 |TightPNO, TCutPNOSingles 1E-12, B3LYP D4 geom, 2.944 eV|
 |                   |      |412 |TightPNO, wB97X-D3 geom), 3.030 eV|
+|                   |      |424 |TightPNO, TCutPNOSingles 1E-12, B3LYP D4 geom, 2.944 eV|
 |                   |      |429 |TightPNO, TCutPNOSingles 1E-12, wB97X-D3 geom, 2.907 eV|
+|                   |      |431 |TightPNO, TCutPNOSingles 1E-12, TCutMKN 1E-4, B3LYP geom, 2.897 eV|
+|                   |      |426 |TightPNO, TCutPNOSingles 1E-12, TCutMKN 1E-4, wB97X-D3 geom, 2.931 eV|
 |RI-ADC2/VDZ/Qchem  |455   |372||
 |                  |2.73  |3.34  eV||
 |RI-ADC2/VTZ/Qchem  |    |||
