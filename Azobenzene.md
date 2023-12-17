@@ -107,7 +107,7 @@ END
 %MAXCORE 5000
 
 %PAL
-  NPROCS 18
+  NPROCS 18480
 END
 
 %TDDFT
@@ -137,7 +137,7 @@ END
    DOSOLV  TRUE
    MAXITER 500
 END
-```
+```480
 
 ## 13.5 Results
 
@@ -153,6 +153,7 @@ B3LYP              505   418 (507 and 417 in Orca's tutorial page)
 
 CAM-B3LYP          485   407
 wB97X-D3           480   402
+                   xxx   yyy (with TDA)
                          405 (B3LYP D4 geom), 3.059 eV
                          402 (wB97X-D3 geom), 3.084 eV
 
@@ -166,7 +167,7 @@ STEOM-DLPNO-CCSD   509   392 DEF2-TZVP/C instead of AUTOAUX
 
                          421 (B3LYP D4 geom), 2.963 eV
                          412 (wB97X-D3 geom), 3.030 eV
-
+480
 RI-ADC2/VDZ/Qchem  455   372
                   2.73  3.34  eV 
 RI-ADC2/VTZ/Qchem      
