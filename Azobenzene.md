@@ -144,6 +144,7 @@ END
 - Wavelength of absorbance for E and Z isomers.
 - Geometry optimized using reported geometries at the level `wB97X-D3/def2TZVP`
 - `def2TZVP RIJCOSX TIGHTSCF CPCM(HEXANE) AUTOAUX` unless mentioned in all calculations
+- By default, `STEOM-DLPNO-CCSD` uses `NormalPNO`
 
 
 | Method | E | Z | Remarks |
@@ -152,18 +153,19 @@ END
 |B3LYP              |505   |418 |(507 and 417 in Orca's tutorial page)|
 |CAM-B3LYP          |485   |407||
 |wB97X-D3           |480   |402||
-|                   |xxx   |xxx |(with TDA)|
-|                   |      | 405 |(B3LYP D4 geom), 3.059 eV|
-|                   |      |402 |(wB97X-D3 geom), 3.084 eV|
+|                   |xxx   |xxx |TDA True|
+|                   |      | 405 |B3LYP D4 geom, 3.059 eV|
+|                   |      |402 |wB97X-D3 geom, 3.084 eV|
 |wB2PLYP            |474   |396||
-|STEOM-DLPNO-CCSD   |509   |392 |(shift 117 nm)|
+|STEOM-DLPNO-CCSD   |509   |392 |shift 117 nm|
 |STEOM-DLPNO-CCSD   |505   |411 |TightPNO (shift of 94 nm)|
 |STEOM-DLPNO-CCSD   |509   |392 |DEF2-TZVP/C instead of AUTOAUX|
-|                  |2.46   |3.18 eV |(shift 0.72 eV)|
-|                   |      |421 |(B3LYP D4 geom), 2.963 eV|
-|                   |      |412 |(wB97X-D3 geom), 3.030 eV|
+|                  |2.46   |3.18 eV |shift 0.72 eV|
+|                   |      |421 |TightPNO, B3LYP D4 geom, 2.963 eV|
+|                   |      |424 |TCutPNOSingles 1E-12, B3LYP D4 geom, 2.944 eV|
+|                   |      |412 |TightPNO, wB97X-D3 geom), 3.030 eV|
 |RI-ADC2/VDZ/Qchem  |455   |372||
 |                  |2.73  |3.34  eV||
 |RI-ADC2/VTZ/Qchem  |    |||
-|Exp.               |490   |404 |(shift 86 nm)|
-|                  |2.53   |3.07 eV |(shift 0.54 eV)   |
+|Exp.               |490   |404 |shift 86 nm|
+|                  |2.53   |3.07 eV |shift 0.54 eV   |
