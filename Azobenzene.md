@@ -131,7 +131,7 @@ END
 %PAL
   NPROCS 18
 END
-
+480
 %MDCI
    NROOTS  5
    DOSOLV  TRUE
@@ -152,9 +152,9 @@ PBE0               504   413
 B3LYP              505   418 (507 and 417 in Orca's tutorial page)
 
 CAM-B3LYP          485   407
-wB97X-D3           480   402
-                   xxx   yyy (with TDA)
-                         405 (B3LYP D4 geom), 3.059 eV
+wB97X-D3           480   402    
+                   xxx   xxx (with TDA)    
+                         405 (B3LYP D4 geom), 3.059 eV        
                          402 (wB97X-D3 geom), 3.084 eV
 
 wB2PLYP            474   396
