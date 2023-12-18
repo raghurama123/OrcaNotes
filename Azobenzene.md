@@ -78,6 +78,7 @@ H 0.184731 -1.513104 1.371002
 
 ```
 !WB97X-D3 RIJCOSX DEF2-TZVP AUTOAUX TIGHTSCF OPT FREQ CPCM(HEXANE)
+|STEOM-DLPNO-CCSD   |xxx   |xxx |VeryTightPNO, DEF2-TZVP/C|
 
 * XYZFILE 0 1 E_azobenzene.xyz
 
@@ -129,7 +130,8 @@ END
 %MAXCORE 5000
 
 %PAL
-  NPROCS 18
+  NPROCS 18|STEOM-DLPNO-CCSD   |xxx   |xxx |VeryTightPNO, DEF2-TZVP/C|
+
 END
 
 %MDCI
@@ -179,15 +181,16 @@ END
   
 | Method | E | Z | Remarks |
 |---|---|---|---|
-|STEOM-DLPNO-CCSD   |511.9   |424.3 |LoosePNO, DEF2-TZVP/C|
-|STEOM-DLPNO-CCSD   |509.9   |420.3 |NormalPNO, DEF2-TZVP/C|
-|STEOM-DLPNO-CCSD   |xxx   |401.4 |TightPNO, DEF2-TZVP/C|
-|STEOM-DLPNO-CCSD   |xxx   |xxx |VeryTightPNO, DEF2-TZVP/C|
-||||
-|STEOM-DLPNO-CCSD   |513.8   |425.5 |LoosePNO, AUTOAUX|
-|STEOM-DLPNO-CCSD   |512.1   |xxx |NormalPNO, AUTOAUX|
-|STEOM-DLPNO-CCSD   |xxx   |xxx |TightPNO, AUTOAUX|
-|STEOM-DLPNO-CCSD   |xxx   |xxx |VeryTightPNO, AUTOAUX|
+|DEF2-TZVP/C|||
+|STEOM-DLPNO-CCSD   |511.9   |424.3 |LoosePNO|
+|STEOM-DLPNO-CCSD   |509.9   |420.3 |NormalPNO|
+|STEOM-DLPNO-CCSD   |xxx   |401.4 |TightPNO|
+|STEOM-DLPNO-CCSD   |xxx   |xxx |VeryTightPNO|
+|AUTOAUX|||
+|STEOM-DLPNO-CCSD   |513.8   |425.5 |LoosePNO|
+|STEOM-DLPNO-CCSD   |512.1   |xxx |NormalPNO|
+|STEOM-DLPNO-CCSD   |xxx   |xxx |TightPNO|
+|STEOM-DLPNO-CCSD   |xxx   |xxx |VeryTightPNO|
 |Exp.               |490   |404 |shift 86 nm|
 
 - Settings for `VeryTightPNO` by setting `TIGHTPNO` and updating the `MDCI` block as follows.
