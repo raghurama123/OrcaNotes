@@ -180,12 +180,13 @@ END
 | Method | E | Z | Remarks |
 |---|---|---|---|
 |STEOM-DLPNO-CCSD   |511.9   |424.3 |LoosePNO, DEF2-TZVP/C|
-|STEOM-DLPNO-CCSD   |513.8   |425.5 |LoosePNO, AUTOAUX|
 |STEOM-DLPNO-CCSD   |509.9   |420.3 |NormalPNO, DEF2-TZVP/C|
-|STEOM-DLPNO-CCSD   |xxx   |xxx |NormalPNO, AUTOAUX|
-|STEOM-DLPNO-CCSD   |xxx   |xxx |TightPNO, DEF2-TZVP/C|
-|STEOM-DLPNO-CCSD   |xxx   |xxx |TightPNO, AUTOAUX|
+|STEOM-DLPNO-CCSD   |xxx   |401.4 |TightPNO, DEF2-TZVP/C|
 |STEOM-DLPNO-CCSD   |xxx   |xxx |VeryTightPNO, DEF2-TZVP/C|
+
+|STEOM-DLPNO-CCSD   |513.8   |425.5 |LoosePNO, AUTOAUX|
+|STEOM-DLPNO-CCSD   |512.1   |xxx |NormalPNO, AUTOAUX|
+|STEOM-DLPNO-CCSD   |xxx   |xxx |TightPNO, AUTOAUX|
 |STEOM-DLPNO-CCSD   |xxx   |xxx |VeryTightPNO, AUTOAUX|
 |Exp.               |490   |404 |shift 86 nm|
 
