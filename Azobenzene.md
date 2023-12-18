@@ -179,9 +179,9 @@ END
   
 | Method | E | Z | Remarks |
 |---|---|---|---|
-|STEOM-DLPNO-CCSD   |xxx   |xxx |LoosePNO, DEF2-TZVP/C|
-|STEOM-DLPNO-CCSD   |xxx   |xxx |LoosePNO, AUTOAUX|
-|STEOM-DLPNO-CCSD   |xxx   |xxx |NormalPNO, DEF2-TZVP/C|
+|STEOM-DLPNO-CCSD   |511.9   |424.3 |LoosePNO, DEF2-TZVP/C|
+|STEOM-DLPNO-CCSD   |513.8   |425.5 |LoosePNO, AUTOAUX|
+|STEOM-DLPNO-CCSD   |509.9   |420.3 |NormalPNO, DEF2-TZVP/C|
 |STEOM-DLPNO-CCSD   |xxx   |xxx |NormalPNO, AUTOAUX|
 |STEOM-DLPNO-CCSD   |xxx   |xxx |TightPNO, DEF2-TZVP/C|
 |STEOM-DLPNO-CCSD   |xxx   |xxx |TightPNO, AUTOAUX|
