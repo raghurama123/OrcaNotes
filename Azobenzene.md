@@ -175,6 +175,7 @@ END
 
 ## 13.6 Effect of `AUTOAUX` in STEOM-DLPNO-CCSD
 - Let's do this experiment with geometries at the level `wB97X-D3/def2TZVP`
+- `DEF2TZVP RIJCOSX TIGHTSCF CPCM(HEXANE)` unless specified otherwise  
   
 | Method | E | Z | Remarks |
 |---|---|---|---|
