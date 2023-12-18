@@ -184,12 +184,12 @@ END
 |DEF2-TZVP/C|||
 |STEOM-DLPNO-CCSD   |511.9   |424.3 |LoosePNO|
 |STEOM-DLPNO-CCSD   |509.9   |420.3 |NormalPNO|
-|STEOM-DLPNO-CCSD   |xxx   |401.4 |TightPNO|
+|STEOM-DLPNO-CCSD   |501.4   |xxx |TightPNO|
 |STEOM-DLPNO-CCSD   |xxx   |xxx |VeryTightPNO|
 |AUTOAUX|||
 |STEOM-DLPNO-CCSD   |513.8   |425.5 |LoosePNO|
-|STEOM-DLPNO-CCSD   |512.1   |xxx |NormalPNO|
-|STEOM-DLPNO-CCSD   |xxx   |xxx |TightPNO|
+|STEOM-DLPNO-CCSD   |512.1   |431.2 |NormalPNO|
+|STEOM-DLPNO-CCSD   |492.8   |xxx |TightPNO|
 |STEOM-DLPNO-CCSD   |xxx   |xxx |VeryTightPNO|
 |Exp.               |490   |404 |shift 86 nm|
 
