@@ -172,3 +172,12 @@ END
 |RI-ADC2/VTZ/Qchem  |    |||
 |Exp.               |490   |404 |shift 86 nm|
 |                  |2.53   |3.07 eV |shift 0.54 eV   |
+
+## 13.6 Effect of `AUTOAUX` in STEOM-DLPNO-CCSD
+- Let's do this experiment with geometries at the level `wB97X-D3/def2TZVP`
+| Method | E | Z | Remarks |
+|---|---|---|---|
+|STEOM-DLPNO-CCSD   |509   |392 |TightSCF, LoosePNO, DEF2-TZVP/C|
+|STEOM-DLPNO-CCSD   |505   |411 |TightSCF, LoosePNO, AUTOAUX|
+|Exp.               |490   |404 |shift 86 nm|
+
