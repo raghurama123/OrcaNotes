@@ -160,7 +160,7 @@ END
 |STEOM-DLPNO-CCSD   |509   |392 |shift 117 nm|
 |STEOM-DLPNO-CCSD   |505   |411 |TightPNO (shift of 94 nm)|
 |STEOM-DLPNO-CCSD   |509   |392 |DEF2-TZVP/C instead of AUTOAUX|
-|                  |2.46   |3.18 eV |shift 0.72 eV|
+|                  |2.46   |3.18 eV |shift 0.72 eV|411
 |                   |      |421 |TightPNO, B3LYP D4 geom, 2.963 eV|
 |                   |      |412 |TightPNO, wB97X-D3 geom), 3.030 eV|
 |                   |      |424 |TightPNO, TCutPNOSingles 1E-12, B3LYP D4 geom, 2.944 eV|
@@ -189,7 +189,7 @@ END
 |STEOM-DLPNO-CCSD   |xxx   |xxx |VeryTightPNO, AUTOAUX|
 |Exp.               |490   |404 |shift 86 nm|
 
-- Settings for `VeryTightPNO`
+- Settings for `VeryTightPNO` by setting `TIGHTPNO` and updating the `MDCI` block as follows.
 ```
 %MDCI
   NROOTS         3
