@@ -190,7 +190,7 @@ END
 |STEOM-DLPNO-CCSD   |513.8   |425.5 |LoosePNO|
 |STEOM-DLPNO-CCSD   |512.1   |431.2 |NormalPNO|
 |STEOM-DLPNO-CCSD   |492.8   |412.3, FAILED WITH NROOTS = 3  |TightPNO|
-|STEOM-DLPNO-CCSD   |xxx   |xxx |VeryTightPNO|
+|STEOM-DLPNO-CCSD   |501.3   |xxx |VeryTightPNO|
 |Exp.               |490   |404 |shift 86 nm|
 
 - Settings for `VeryTightPNO` by setting `TIGHTPNO` and updating the `MDCI` block as follows.
