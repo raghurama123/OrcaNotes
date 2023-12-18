@@ -179,11 +179,28 @@ END
   
 | Method | E | Z | Remarks |
 |---|---|---|---|
-|STEOM-DLPNO-CCSD   |509   |392 |LoosePNO, DEF2-TZVP/C|
-|STEOM-DLPNO-CCSD   |505   |411 |LoosePNO, AUTOAUX|
-|STEOM-DLPNO-CCSD   |509   |392 |NormalPNO, DEF2-TZVP/C|
-|STEOM-DLPNO-CCSD   |505   |411 |NormalPNO, AUTOAUX|
-|STEOM-DLPNO-CCSD   |509   |392 |TightPNO, DEF2-TZVP/C|
-|STEOM-DLPNO-CCSD   |505   |411 |TightPNO, AUTOAUX|
+|STEOM-DLPNO-CCSD   |xxx   |xxx |LoosePNO, DEF2-TZVP/C|
+|STEOM-DLPNO-CCSD   |xxx   |xxx |LoosePNO, AUTOAUX|
+|STEOM-DLPNO-CCSD   |xxx   |xxx |NormalPNO, DEF2-TZVP/C|
+|STEOM-DLPNO-CCSD   |xxx   |xxx |NormalPNO, AUTOAUX|
+|STEOM-DLPNO-CCSD   |xxx   |xxx |TightPNO, DEF2-TZVP/C|
+|STEOM-DLPNO-CCSD   |xxx   |xxx |TightPNO, AUTOAUX|
+|STEOM-DLPNO-CCSD   |xxx   |xxx |VeryTightPNO, DEF2-TZVP/C|
+|STEOM-DLPNO-CCSD   |xxx   |xxx |VeryTightPNO, AUTOAUX|
 |Exp.               |490   |404 |shift 86 nm|
+
+- Settings for `VeryTightPNO`
+```
+%MDCI
+  NROOTS         3
+  DOSOLV         TRUE
+  MAXITER        500
+  TCUTPAIRS      1E-6
+  TCUTDO         1E-3
+  TCUTPNO        3.33E-8
+  TCUTPNOSINGLES 1E-9
+  TCUTMKN        1E-4
+  TCUTC          1E-3
+END
+```
 
