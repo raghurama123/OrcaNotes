@@ -182,15 +182,15 @@ END
 | Method | E | Z | Remarks |
 |---|---|---|---|
 |DEF2-TZVP/C|||
-|STEOM-DLPNO-CCSD   |511.9   |424.3 |LoosePNO|
-|STEOM-DLPNO-CCSD   |509.9   |420.3 |NormalPNO|
-|STEOM-DLPNO-CCSD   |501.4   |407.0, FAILED WITH NROOTS = 3 |TightPNO|
-|STEOM-DLPNO-CCSD   |509.5   |410.5 |VeryTightPNO|
+|STEOM-DLPNO-CCSD   |511.9   |424.3 |LoosePNO, shift 87.6 nm|
+|STEOM-DLPNO-CCSD   |509.9   |420.3 |NormalPNO, shift 89.6 nm|
+|STEOM-DLPNO-CCSD   |501.4   |407.0, FAILED WITH NROOTS = 3 |TightPNO, shift 94.4 nm|
+|STEOM-DLPNO-CCSD   |509.5   |410.5 |VeryTightPNO, shift 99.0 nm|
 |AUTOAUX|||
-|STEOM-DLPNO-CCSD   |513.8   |425.5 |LoosePNO|
-|STEOM-DLPNO-CCSD   |512.1   |431.2 |NormalPNO|
-|STEOM-DLPNO-CCSD   |492.8   |412.3, FAILED WITH NROOTS = 3  |TightPNO|
-|STEOM-DLPNO-CCSD   |501.3   |xxx |VeryTightPNO|
+|STEOM-DLPNO-CCSD   |513.8   |425.5 |LoosePNO, shift 88.3 nm|
+|STEOM-DLPNO-CCSD   |512.1   |431.2 |NormalPNO, shift 80.9 nm|
+|STEOM-DLPNO-CCSD   |492.8   |412.3, FAILED WITH NROOTS = 3  |TightPNO, shift 80.5 nm|
+|STEOM-DLPNO-CCSD   |501.3   |xxx |VeryTightPNO, shift xx nm|
 |Exp.               |490   |404 |shift 86 nm|
 
 - Settings for `VeryTightPNO` by setting `TIGHTPNO` and updating the `MDCI` block as follows.
