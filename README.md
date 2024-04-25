@@ -18,7 +18,10 @@
 12. [Excited State Dynamics](ExcitedStateDynamics.md)
 13. [Case Study: UV-Vis Azobenzene](Azobenzene.md)
 14. [Troubleshooting](TroubleShooting.md)            
-     14.1 [STEOM-DLPNO-CCSD](TroubleShooting_STEOM-DLPNO-CCSD.md)   
+     14.1 [STEOM-DLPNO-CCSD](TroubleShooting_STEOM-DLPNO-CCSD.md)
+
+## Notes
+1. Some keywords related to memory and CPU are tuned according to the usage in my group.
 
 ## References
 1. [https://www.orcasoftware.de/tutorials_orca/index.html](https://www.orcasoftware.de/tutorials_orca/index.html)
