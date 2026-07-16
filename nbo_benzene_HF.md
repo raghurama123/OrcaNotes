@@ -161,8 +161,7 @@ $$
 The bonding NBO can be written approximately as
 
 $$
-\sigma_{\mathrm{H-F}}
-=
+\sigma_{\mathrm{H-F}} =
 0.8945\,h_{\mathrm F}
 +
 0.4470\,h_{\mathrm H}.
@@ -205,10 +204,8 @@ The corresponding antibonding NBO is
 It can be written approximately as
 
 $$
-\sigma^\ast_{\mathrm{H-F}}
-=
-0.4470\,h_{\mathrm F}
--
+\sigma^\ast_{\mathrm{H-F}} =
+0.4470\,h_{\mathrm F} -
 0.8945\,h_{\mathrm H}.
 $$
 
@@ -237,10 +234,8 @@ The NBO second-order perturbation analysis examines interactions between occupie
 
 For a donor orbital $i$ and acceptor orbital $j$, the stabilization energy is approximately
 
-$$
-E^{(2)}_{i\rightarrow j}
-=
--q_i
+$$ E^{(2)}_{i\rightarrow j}
+= -q_i
 \frac{F_{ij}^2}
 {\varepsilon_j-\varepsilon_i},
 $$
@@ -391,26 +386,16 @@ $$
 The reverse interaction is considerably weaker than the forward interaction:
 
 $$
-E^{(2)}
-\left[
-\pi_{\mathrm{benzene}}
-\rightarrow
-\sigma^\ast_{\mathrm{H-F}}
-\right]
-=
+E^{(2)} \left[ \pi_{\mathrm{benzene}} \rightarrow
+\sigma^\ast_{\mathrm{H-F}} \right] =
 5.74\ \mathrm{kcal\,mol^{-1}},
 $$
 
 whereas
 
-$$
-E^{(2)}
-\left[
-n_{\mathrm F}
-\rightarrow
-\pi^\ast_{\mathrm{benzene}}
-\right]
-=
+$$ E^{(2)}
+\left[ n_{\mathrm F} \rightarrow \pi^\ast_{\mathrm{benzene}}
+\right] =
 0.22\ \mathrm{kcal\,mol^{-1}}.
 $$
 
@@ -448,21 +433,17 @@ These effects should be established by comparison with an isolated HF molecule c
 In particular, one should compare:
 
 $$
-\Delta r_{\mathrm{H-F}}
-=
+\Delta r_{\mathrm{H-F}} =
 r_{\mathrm{H-F}}(\text{complex})
--
-r_{\mathrm{H-F}}(\text{isolated}),
+- r_{\mathrm{H-F}}(\text{isolated}),
 $$
 
 and
 
 $$
 \Delta\nu_{\mathrm{H-F}}
-=
-\nu_{\mathrm{H-F}}(\text{complex})
--
-\nu_{\mathrm{H-F}}(\text{isolated}).
+= \nu_{\mathrm{H-F}}(\text{complex})
+- \nu_{\mathrm{H-F}}(\text{isolated}).
 $$
 
 A negative value of $\Delta\nu_{\mathrm{H-F}}$ would indicate a red shift.
@@ -472,11 +453,9 @@ The complete $\sigma^\ast_{\mathrm{H-F}}$ occupancy of $0.01460e$ should not aut
 The change in occupancy should therefore be calculated as
 
 $$
-\Delta n(\sigma^\ast_{\mathrm{H-F}})
-=
+\Delta n(\sigma^\ast_{\mathrm{H-F}}) =
 n(\sigma^\ast_{\mathrm{H-F}})_{\mathrm{complex}}
--
-n(\sigma^\ast_{\mathrm{H-F}})_{\mathrm{isolated}}.
+- n(\sigma^\ast_{\mathrm{H-F}})_{\mathrm{isolated}}.
 $$
 
 ---
@@ -653,11 +632,9 @@ $$
 The binding energy should instead be evaluated from the total electronic energies of the complex and isolated fragments:
 
 $$
-\Delta E_{\mathrm{binding}}
-=
+\Delta E_{\mathrm{binding}} =
 E_{\mathrm{C_6H_6\cdots HF}}
--
-E_{\mathrm{C_6H_6}}
+- E_{\mathrm{C_6H_6}}
 -
 E_{\mathrm{HF}}.
 $$
@@ -692,20 +669,16 @@ The most useful difference quantities are
 
 $$
 \Delta n(\sigma^\ast_{\mathrm{H-F}})
-=
-n(\sigma^\ast_{\mathrm{H-F}})_{\mathrm{complex}}
--
-n(\sigma^\ast_{\mathrm{H-F}})_{\mathrm{isolated}},
+= n(\sigma^\ast_{\mathrm{H-F}})_{\mathrm{complex}}
+- n(\sigma^\ast_{\mathrm{H-F}})_{\mathrm{isolated}},
 $$
 
 and
 
 $$
 \Delta q_{\mathrm{HF}}
-=
-q_{\mathrm{HF}}(\mathrm{complex})
--
-q_{\mathrm{HF}}(\mathrm{isolated}).
+= q_{\mathrm{HF}}(\mathrm{complex})
+- q_{\mathrm{HF}}(\mathrm{isolated}).
 $$
 
 ---
