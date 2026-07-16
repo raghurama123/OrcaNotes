@@ -25,8 +25,8 @@
 
 ## References
 1. [https://www.orcasoftware.de/tutorials_orca/index.html](https://www.orcasoftware.de/tutorials_orca/index.html)
-2. Orca Manual, Version 5.0.4
-3. [https://brehm-research.de/orcamd.php](https://brehm-research.de/orcamd.php) 
+2. [https://brehm-research.de/orcamd.php](https://brehm-research.de/orcamd.php)
+3. [https://www.faccts.de/docs/orca/6.0/manual/index.html](https://www.faccts.de/docs/orca/6.0/manual/index.html)
 
 
 
