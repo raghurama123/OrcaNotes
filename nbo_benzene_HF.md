@@ -612,20 +612,12 @@ The actual interaction energy contains several contributions:
 Therefore,
 
 $$
-E^{(2)}
-\neq
-\Delta E_{\mathrm{binding}}.
-$$
+E^{(2)} \neq \Delta E_{\mathrm{binding}}. $$
 
 The binding energy should instead be evaluated from the total electronic energies of the complex and isolated fragments:
 
 $$
-\Delta E_{\mathrm{binding}} =
-E_{\mathrm{C_6H_6\cdots HF}}
-- E_{\mathrm{C_6H_6}}
--
-E_{\mathrm{HF}}.
-$$
+\Delta E_{\mathrm{binding}} = E_{\mathrm{C_6H_6\cdots HF}} - E_{\mathrm{C_6H_6}} - E_{\mathrm{HF}}. $$
 
 A counterpoise correction may also be used to estimate basis-set superposition error.
 
