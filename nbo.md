@@ -488,3 +488,49 @@ The main conclusions are:
 7. NBO therefore gives an almost ideal Lewis description of H<sub>2</sub>.
 
 > **Important limitation:** This simple closed-shell picture is appropriate near the equilibrium H–H distance. At very large H–H separation, a restricted closed-shell calculation does not correctly describe two separated open-shell H atoms.
+
+## 15.13 Why does the occupied NBO energy match the sigma MO energy, while the antibonding NBO energy differs?
+
+For H$_2$, there is only one occupied spatial orbital. Therefore, the occupied H--H bonding NBO is necessarily the same orbital as the canonical bonding MO:
+
+$$
+\mathrm{BD(H-H)}=\sigma_g.
+$$
+
+Hence, both have the same energy:
+
+$$
+\varepsilon_{\mathrm{BD(H-H)}}=\varepsilon_{\sigma_g}
+=-0.428042\ E_{\mathrm h}.
+$$
+
+The virtual orbital space is much larger because the `6-31+G(d,p)` basis generates several unoccupied canonical MOs. The H--H antibonding NBO is constructed as the localized antibonding partner of the occupied bond and is generally a linear combination of several canonical virtual orbitals:
+
+$$
+\mathrm{BD^\ast(H-H)}=
+\sum_a c_a\phi_a^{\mathrm{virtual}}.
+$$
+
+Therefore, its NBO energy,
+
+$$
+\varepsilon_{\mathrm{BD^\ast}}=
+\left\langle
+\mathrm{BD^\ast}
+\middle|
+\hat F
+\middle|
+\mathrm{BD^\ast}
+\right\rangle,
+$$
+
+does not have to equal the canonical LUMO energy.
+
+For the present calculation:
+
+```text
+Canonical occupied MO energy = -0.428042 Eh
+Bonding NBO energy           = -0.42804  Eh
+
+Canonical LUMO energy        =  0.102957 Eh
+Antibonding NBO energy       =  0.38589  Eh
