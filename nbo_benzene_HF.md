@@ -432,19 +432,11 @@ These effects should be established by comparison with an isolated HF molecule c
 
 In particular, one should compare:
 
-$$
-\Delta r_{\mathrm{H-F}} =
-r_{\mathrm{H-F}}(\text{complex})
-- r_{\mathrm{H-F}}(\text{isolated}),
-$$
+$$ \Delta r_{\mathrm{H-F}} = r_{\mathrm{H-F}}(\text{complex}) - r_{\mathrm{H-F}}(\text{isolated}), $$
 
 and
 
-$$
-\Delta\nu_{\mathrm{H-F}}
-= \nu_{\mathrm{H-F}}(\text{complex})
-- \nu_{\mathrm{H-F}}(\text{isolated}).
-$$
+$$ \Delta\nu_{\mathrm{H-F}} = \nu_{\mathrm{H-F}}(\text{complex}) - \nu_{\mathrm{H-F}}(\text{isolated}). $$
 
 A negative value of $\Delta\nu_{\mathrm{H-F}}$ would indicate a red shift.
 
@@ -452,11 +444,7 @@ The complete $\sigma^\ast_{\mathrm{H-F}}$ occupancy of $0.01460e$ should not aut
 
 The change in occupancy should therefore be calculated as
 
-$$
-\Delta n(\sigma^\ast_{\mathrm{H-F}}) =
-n(\sigma^\ast_{\mathrm{H-F}})_{\mathrm{complex}}
-- n(\sigma^\ast_{\mathrm{H-F}})_{\mathrm{isolated}}.
-$$
+$$ \Delta n(\sigma^\ast_{\mathrm{H-F}}) = n(\sigma^\ast_{\mathrm{H-F}})_{\mathrm{complex}} - n(\sigma^\ast_{\mathrm{H-F}})_{\mathrm{isolated}}. $$
 
 ---
 
