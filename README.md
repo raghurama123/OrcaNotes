@@ -19,7 +19,7 @@
 13. [Case Study: UV-Vis Azobenzene](Azobenzene.md)
 14. [Troubleshooting](TroubleShooting.md)            
      14.1 [STEOM-DLPNO-CCSD](TroubleShooting_STEOM-DLPNO-CCSD.md)
-15. [NBO](nbp.md) 
+15. [NBO](nbo.md) 
 
 ## Notes
 1. Some keywords related to memory and CPU are tuned according to the usage in my group.
