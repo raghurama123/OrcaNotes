@@ -491,7 +491,7 @@ The main conclusions are:
 
 ## 15.13 Why does the occupied NBO energy match the sigma MO energy, while the antibonding NBO energy differs?
 
-For H$_2$, there is only one occupied spatial orbital. Therefore, the occupied H--H bonding NBO is necessarily the same orbital as the canonical bonding MO:
+For H<sub>2</sub>, there is only one occupied spatial orbital. Therefore, the occupied H--H bonding NBO is necessarily the same orbital as the canonical bonding MO:
 
 $$
 \mathrm{BD(H-H)}=\sigma_g.
