@@ -1,6 +1,6 @@
 ## 15.2 NBO analysis of the C<sub>6</sub>H<sub>6</sub>···HF complex
 
-The benzene–HF complex provides a simple example of an X–H···$\pi$ hydrogen bond. Benzene acts primarily as an electron donor, while the antibonding orbital of HF acts as the acceptor.
+The benzene–HF complex provides a simple example of an X–H ··· $\pi$ hydrogen bond. Benzene acts primarily as an electron donor, while the antibonding orbital of HF acts as the acceptor.
 
 The dominant donor–acceptor interaction is
 
@@ -47,7 +47,7 @@ The position of HF is not exactly above the center of the ring. The hydrogen is 
 
 The H–F bond is nearly perpendicular to the benzene plane. The angle between the H–F axis and the normal to the ring plane is approximately $7^\circ$.
 
-Thus, the optimized structure is an off-center H–F···$\pi$ complex in which the positive end of HF points toward one part of the benzene $\pi$ cloud.
+Thus, the optimized structure is an off-center H–F ··· $\pi$ complex in which the positive end of HF points toward one part of the benzene $\pi$ cloud.
 
 ---
 
