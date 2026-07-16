@@ -12,7 +12,7 @@ The hydrogen molecule is the simplest possible example because it contains only:
 
 ---
 
-## 15.1 NBO analysis of the H$_2$ molecule
+## 15.1 NBO analysis of the H<sub>2</sub> molecule
 
 ### 15.1.1 Optimized geometry
 
@@ -126,7 +126,7 @@ This is extremely small. The H–H bond is therefore almost entirely a $1s$–$1
 
 ## 15.3 Lewis structure selected by NBO
 
-The NBO program searches for a localized Lewis structure. For H$_2$, it finds:
+The NBO program searches for a localized Lewis structure. For H<sub>2</sub>, it finds:
 
 ```text
 CR  0
@@ -137,7 +137,7 @@ LP  0
 
 These labels mean:
 
-| Label | Meaning | Number in H$_2$ |
+| Label | Meaning | Number in H<sub>2</sub> |
 |---|---|---:|
 | `CR` | Core orbital | 0 |
 | `BD` | Two-center bonding orbital | 1 |
@@ -233,7 +233,7 @@ $$
 \sigma_g(1s)
 $$
 
-orbital of H$_2$.
+orbital of H<sub>2</sub>.
 
 ---
 
@@ -328,7 +328,7 @@ This means that NBO finds no significant bending of the natural hybrids away fro
 
 This is expected because:
 
-- H$_2$ is linear;
+- H<sub>2</sub> is linear;
 - the two hybrids point directly toward each other;
 - the $p$-character is extremely small.
 
@@ -360,7 +360,7 @@ $$
 \pi\rightarrow\pi^\ast.
 $$
 
-H$_2$ has only one occupied Lewis NBO:
+H<sub>2</sub> has only one occupied Lewis NBO:
 
 $$
 \mathrm{BD(H-H)}.
@@ -432,7 +432,7 @@ Thus, the selected Lewis structure is H–H.
 
 ---
 
-## 15.12 Summary of the H$_2$ NBO analysis
+## 15.12 Summary of the H<sub>2</sub> NBO analysis
 
 The complete NBO description is
 
@@ -479,12 +479,12 @@ $$
 
 The main conclusions are:
 
-1. H$_2$ contains one perfectly occupied two-center H–H bonding NBO.
+1. H<sub>2</sub> contains one perfectly occupied two-center H–H bonding NBO.
 2. The bond is shared equally between the two H atoms.
 3. The corresponding antibonding NBO is empty.
 4. The H–H bond is almost entirely formed from hydrogen $1s$ orbitals.
 5. The small $p_z$ contribution represents polarization of the occupied bond.
 6. There are no significant second-order donor–acceptor interactions.
-7. NBO therefore gives an almost ideal Lewis description of H$_2$.
+7. NBO therefore gives an almost ideal Lewis description of H<sub>2</sub>.
 
 > **Important limitation:** This simple closed-shell picture is appropriate near the equilibrium H–H distance. At very large H–H separation, a restricted closed-shell calculation does not correctly describe two separated open-shell H atoms.
