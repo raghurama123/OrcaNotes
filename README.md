@@ -20,7 +20,8 @@
 14. [Troubleshooting](TroubleShooting.md)            
      14.1 [STEOM-DLPNO-CCSD](TroubleShooting_STEOM-DLPNO-CCSD.md)
 15. [NBO](nbo.md)   
-     15.1 [Covalent bond in H2](nbo_H2.md)
+     15.1 [Covalent bond in H2](nbo_H2.md)    
+     15.2 [Benzene-HF complex](benzene_HF.md)    
         
 
 ## Notes
