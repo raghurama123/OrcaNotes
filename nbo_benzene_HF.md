@@ -647,19 +647,13 @@ The following quantities can then be compared:
 
 The most useful difference quantities are
 
-$$
-\Delta n(\sigma^\ast_{\mathrm{H-F}})
-= n(\sigma^\ast_{\mathrm{H-F}})_{\mathrm{complex}}
-- n(\sigma^\ast_{\mathrm{H-F}})_{\mathrm{isolated}},
-$$
+$$ \Delta n(\sigma^\ast_{\mathrm{H-F}}) = n(\sigma^\ast_{\mathrm{H-F}})_{\mathrm{complex}}
+- n(\sigma^\ast_{\mathrm{H-F}})_{\mathrm{isolated}}, $$
 
 and
 
-$$
-\Delta q_{\mathrm{HF}}
-= q_{\mathrm{HF}}(\mathrm{complex})
-- q_{\mathrm{HF}}(\mathrm{isolated}).
-$$
+$$ \Delta q_{\mathrm{HF}}
+= q_{\mathrm{HF}}(\mathrm{complex}) - q_{\mathrm{HF}}(\mathrm{isolated}). $$
 
 ---
 
