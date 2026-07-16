@@ -1,4 +1,4 @@
-## 15.2 NBO analysis of the C<sub>6</sub>H<sub>6</sub>···HF complex
+## 15.2 NBO analysis of the C<sub>6</sub>H<sub>6</sub> ··· HF complex
 
 The benzene–HF complex provides a simple example of an X–H ··· $\pi$ hydrogen bond. Benzene acts primarily as an electron donor, while the antibonding orbital of HF acts as the acceptor.
 
@@ -278,7 +278,7 @@ $$
 \sigma^\ast_{\mathrm{H-F}}.
 $$
 
-This is the characteristic donor–acceptor interaction of an X–H···$\pi$ hydrogen bond.
+This is the characteristic donor–acceptor interaction of an X–H ··· $\pi$ hydrogen bond.
 
 The benzene $\pi$ system acts as the electron donor, while the H–F antibond acts as the electron acceptor.
 
@@ -629,7 +629,7 @@ To quantify the changes caused by complex formation, perform separate NBO calcul
 
 1. isolated HF;
 2. isolated benzene;
-3. the optimized benzene···HF complex.
+3. the optimized benzene ··· HF complex.
 
 The following quantities can then be compared:
 
@@ -655,7 +655,7 @@ $$ \Delta q_{\mathrm{HF}} = q_{\mathrm{HF}}(\mathrm{complex}) - q_{\mathrm{HF}}(
 
 ---
 
-### 15.2.18 Summary of the C<sub>6</sub>H<sub>6</sub>···HF NBO analysis
+### 15.2.18 Summary of the C<sub>6</sub>H<sub>6</sub> ··· HF NBO analysis
 
 The main intermolecular orbital interaction is
 
@@ -669,7 +669,7 @@ $$
 
 | Quantity | Result |
 |---|---:|
-| Nature of complex | X–H···$\pi$ hydrogen-bonded complex |
+| Nature of complex | X–H ··· $\pi$ hydrogen-bonded complex |
 | Molecular units | HF and C<sub>6</sub>H<sub>6</sub> |
 | New covalent C–H bond | Not found |
 | H–F bond length | Approximately $0.936$ Å |
