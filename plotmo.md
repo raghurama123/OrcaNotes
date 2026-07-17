@@ -10,6 +10,7 @@ A cube file contains:
 
 The resulting `.cube` files can be visualized using programs such as:
 
+- Vesta;
 - VMD;
 - Avogadro;
 - ChimeraX;
@@ -335,8 +336,7 @@ The two colors represent opposite phases of the orbital wavefunction.
 </tr>
 </table>
 
-**Figure 16.1:** HOMO and LUMO of benzene calculated at the LC-BLYP/def2-TZVP level using the same isosurface value.
-
+**Figure 16.1:** HOMO and LUMO isosurfaces of benzene calculated at the LC-BLYP/def2-TZVP level. The cube files were generated with ORCA 6.1.1 and visualized using VESTA with the same isosurface value. The two colors indicate opposite phases (signs) of the molecular orbital.
 ---
 
 ## 16.8 Choice of isosurface value
